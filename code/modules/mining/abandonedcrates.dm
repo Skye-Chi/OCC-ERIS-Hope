@@ -32,7 +32,7 @@
 			new/obj/item/clothing/suit/space(src)
 			new/obj/item/clothing/head/space(src)
 		if(11 to 15)
-			new/obj/item/reagent_containers/glass/beaker/bluespace(src)
+			new/obj/item/reagent_containers/glass/beaker/onispace(src)
 		if(16 to 20)
 			for(var/i = 0, i < 10, i++)
 				new/obj/item/ore/diamond(src)

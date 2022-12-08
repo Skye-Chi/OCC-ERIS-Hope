@@ -231,7 +231,7 @@ Procs:
 	shortname = "Power Manipulation"
 	desc = "The various technologies behind the storage and generation of electicity."
 
-/datum/tech/bluespace
+/datum/tech/onispace
 	name = "'Blue-space' Research"
 	shortname = "Blue-space"
 	desc = "Research into the sub-reality known as 'blue-space'."

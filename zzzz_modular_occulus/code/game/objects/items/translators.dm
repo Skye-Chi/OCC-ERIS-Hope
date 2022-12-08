@@ -91,7 +91,7 @@
 /datum/design/research/item/translator
 	name = "Handheld Translator"
 	build_path = /obj/item/device/universal_translator
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 
 /datum/design/research/item/translator/ear
 	name = "Translator Earpiece"

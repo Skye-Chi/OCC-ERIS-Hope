@@ -5,23 +5,23 @@ Additionally, not harvested nest will periodically teleport items and people to 
 */
 
 
-/datum/storyevent/bluespace_crystal_infestation
-	id = "bluespace_crystal_infestation"
-	name = "bluespace_crystal_infestation"
+/datum/storyevent/onispace_crystal_infestation
+	id = "onispace_crystal_infestation"
+	name = "onispace_crystal_infestation"
 
 	weight = 1
 
-	event_type = /datum/event/bluespace_crystal_infestation
+	event_type = /datum/event/onispace_crystal_infestation
 	event_pools = list(
 		EVENT_LEVEL_MODERATE = POOL_THRESHOLD_MODERATE * 1.2
 	)
 	tags = list(TAG_POSITIVE)
 
 
-/datum/event/bluespace_crystal_infestation
+/datum/event/onispace_crystal_infestation
 	var/area/event_area
 
-/datum/event/bluespace_crystal_infestation/setup()
+/datum/event/onispace_crystal_infestation/setup()
 	var/list/candidates = all_areas.Copy()
 	var/area/candidate
 	if(!prob(10))  // 10% chance not to spawn in maints.
@@ -30,9 +30,9 @@ Additionally, not harvested nest will periodically teleport items and people to 
 				candidates -= candidate
 	event_area = pick(candidates)
 
-/datum/event/bluespace_crystal_infestation/start()
+/datum/event/onispace_crystal_infestation/start()
 	var/space_to_spawn = event_area.random_space()
-	log_and_message_admins("Bluespace nest spawned: [jumplink(space_to_spawn)]")
+	log_and_message_admins("onispace nest spawned: [jumplink(space_to_spawn)]")
 	var/obj/structure/bs_crystal_structure/BSCS = new (space_to_spawn)
 	BSCS.entropy_value += 2//8 + 2 = 10
-	GLOB.bluespace_entropy += rand(BSCS.entropy_value, BSCS.entropy_value * 3)
+	GLOB.onispace_entropy += rand(BSCS.entropy_value, BSCS.entropy_value * 3)

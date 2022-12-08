@@ -1,7 +1,7 @@
-/datum/technology/basic_bluespace
+/datum/technology/basic_onispace
 	name = "Basic 'Blue-space'"
 	desc = "Basic blue-space probing."
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 
 	x = 0.2
 	y = 0.2
@@ -16,13 +16,13 @@
 /datum/technology/radio_transmission
 	name = "Blue-space Transmission"
 	desc = "Blue-space broadcasting and receiving basics."
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 
 	x = 0.2
 	y = 0.4
 	icon = "headset"
 
-	required_technologies = list(/datum/technology/basic_bluespace)
+	required_technologies = list(/datum/technology/basic_onispace)
 	required_tech_levels = list()
 	cost = 200
 
@@ -30,8 +30,8 @@
 
 /datum/technology/telecommunications
 	name = "Roots\' Telecommunications"
-	desc = "Parts for telecommunications. Hyperwave filtering method. Subspace ansible. Subspace transmition and analyzing method. Advanced bluespace broadcasting and receiving. Transmition system monitoring."
-	tech_type = RESEARCH_BLUESPACE
+	desc = "Parts for telecommunications. Hyperwave filtering method. Subspace ansible. Subspace transmition and analyzing method. Advanced onispace broadcasting and receiving. Transmition system monitoring."
+	tech_type = RESEARCH_onispace
 
 	x = 0.2
 	y = 0.6
@@ -56,14 +56,14 @@
 							/datum/design/research/item/part/subspace_crystal,
 							/datum/design/research/item/part/subspace_transmitter)
 
-/datum/technology/bluespace_telecommunications
+/datum/technology/onispace_telecommunications
 	name = "Advanced Telecommunications"
 	desc = "Advanced telecommunications machinery. Decryption method. Relays\' system. Complex sorting of machinery. Data storing system. Network relay."
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 
 	x = 0.4
 	y = 0.6
-	icon = "bluespacething"
+	icon = "onispacething"
 
 	required_technologies = list(/datum/technology/telecommunications)
 	required_tech_levels = list()
@@ -81,7 +81,7 @@
 /datum/technology/transmission_encryption
 	name = "Transmission Encryption"
 	desc = "Transmission Encryption"
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 
 	x = 0.2
 	y = 0.8
@@ -96,13 +96,13 @@
 /datum/technology/spatial_scan
 	name = "Spatial Analyzing"
 	desc = "Basics of spatial analyze, generally using for location of beacons and anomaly analyzing."
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 	icon = "pda"
 
 
 	x = 0.5
 	y = 0.4
-	required_technologies = list(/datum/technology/basic_bluespace)
+	required_technologies = list(/datum/technology/basic_onispace)
 	cost = 800
 
 	unlocks_designs = list(	/datum/design/research/item/ano_scanner,
@@ -110,10 +110,10 @@
 							/datum/design/research/item/gps
 							)
 
-/datum/technology/bluespace_shield
-	name = "Bluespace Shields"
-	desc = "Improved light-shields with using of bluespace technologies."
-	tech_type = RESEARCH_BLUESPACE
+/datum/technology/onispace_shield
+	name = "onispace Shields"
+	desc = "Improved light-shields with using of onispace technologies."
+	tech_type = RESEARCH_onispace
 
 	x = 0.4
 	y = 0.4
@@ -123,12 +123,12 @@
 	required_tech_levels = list()
 	cost = 1500
 
-	unlocks_designs = list(/datum/design/research/circuit/shield/hull, /datum/design/research/circuit/telesci/inhibit) //OCCULUS EDIT: Adds inhibitors to bluespace research.
+	unlocks_designs = list(/datum/design/research/circuit/shield/hull, /datum/design/research/circuit/telesci/inhibit) //OCCULUS EDIT: Adds inhibitors to onispace research.
 
 /datum/technology/teleportation
 	name = "Teleportation"
-	desc = "Creating a worm hole through a bluespace, safely transporting objects through it."
-	tech_type = RESEARCH_BLUESPACE
+	desc = "Creating a worm hole through a onispace, safely transporting objects through it."
+	tech_type = RESEARCH_onispace
 
 	x = 0.6
 	y = 0.6
@@ -144,7 +144,7 @@
 /datum/technology/adv_spatial_scan
 	name = "Advanced Spatial Analyzing"
 	desc = "Advanced Spatial Analyzing"
-	tech_type = RESEARCH_BLUESPACE
+	tech_type = RESEARCH_onispace
 	icon = "telescience"
 
 
@@ -164,10 +164,10 @@
 							/datum/design/research/circuit/teleporter/hub
 							)
 
-/datum/technology/bluespace_tools
-	name = "Advanced Bluespace Tech"
-	desc = "In-Bluespace storing method, allowing store objects/reagents in bluespace. And The method of separate storage of reagents."
-	tech_type = RESEARCH_BLUESPACE
+/datum/technology/onispace_tools
+	name = "Advanced onispace Tech"
+	desc = "In-onispace storing method, allowing store objects/reagents in onispace. And The method of separate storage of reagents."
+	tech_type = RESEARCH_onispace
 
 	x = 0.8
 	y = 0.8
@@ -177,23 +177,23 @@
 	required_tech_levels = list()
 	cost = 3000
 
-	unlocks_designs = list(	/datum/design/research/item/beaker/bluespace,
+	unlocks_designs = list(	/datum/design/research/item/beaker/onispace,
 							/datum/design/research/item/beaker/noreact,
 							/datum/design/research/item/bag_holding,
-							/datum/design/research/item/weapon/bluespace_harpoon,
-							/datum/design/research/item/weapon/bluespace_dagger
+							/datum/design/research/item/weapon/onispace_harpoon,
+							/datum/design/research/item/weapon/onispace_dagger
 							)
 
-/datum/technology/bluespace_extended
-	name = "Extended Bluespace Tech"
-	desc = "Application of the bluespace storing technology to a wider variety of containers."
-	tech_type = RESEARCH_BLUESPACE
+/datum/technology/onispace_extended
+	name = "Extended onispace Tech"
+	desc = "Application of the onispace storing technology to a wider variety of containers."
+	tech_type = RESEARCH_onispace
 
 	x = 0.8
 	y = 0.9
 	icon = "holdingpouch"
 
-	required_technologies = list(/datum/technology/bluespace_tools)
+	required_technologies = list(/datum/technology/onispace_tools)
 	required_tech_levels = list()
 	cost = 1500
 
@@ -204,14 +204,14 @@
 						    )
 	
 /*
-/datum/technology/bluespace_rped
-	name = "Bluespace RPED"
-	desc = "Bluespace RPED"
-	tech_type = RESEARCH_BLUESPACE
+/datum/technology/onispace_rped
+	name = "onispace RPED"
+	desc = "onispace RPED"
+	tech_type = RESEARCH_onispace
 
 	x = 0.8
 	y = 0.4
-	icon = "bluespacerped"
+	icon = "onispacerped"
 
 	required_technologies = list(/datum/technology/teleportation)
 	required_tech_levels = list()

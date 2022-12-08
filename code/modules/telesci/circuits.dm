@@ -3,23 +3,23 @@
 	name = T_BOARD("advanced telepad")
 	build_path = /obj/machinery/telesci_pad
 	board_type = "machine"
-	origin_tech = list(TECH_MATERIAL = 3, TECH_BLUESPACE = 4)
+	origin_tech = list(TECH_MATERIAL = 3, TECH_onispace = 4)
 
 	req_components = list(
-		/obj/item/bluespace_crystal = 2,
+		/obj/item/onispace_crystal = 2,
 		/obj/item/stock_parts/capacitor = 1
 	)
 
 /obj/item/electronics/circuitboard/telesci_console
 	name = T_BOARD("Telescience Console")
 	build_path = /obj/machinery/computer/telesci_console
-	origin_tech = list(TECH_DATA = 3, TECH_BLUESPACE = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_onispace = 2)
 
 /obj/item/electronics/circuitboard/telesci_relay
 	name = T_BOARD("telepad relay")
 	build_path = /obj/machinery/telesci_relay
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 3, TECH_BLUESPACE = 3)
+	origin_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 3, TECH_onispace = 3)
 
 	req_components = list(
 		/obj/item/stock_parts/manipulator = 1,
@@ -27,9 +27,9 @@
 	)
 
 /obj/item/electronics/circuitboard/tele_inhibitor
-	name = T_BOARD("bluespace inhibitor")
+	name = T_BOARD("onispace inhibitor")
 	build_path = /obj/machinery/telesci_inhibitor
-	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_BLUESPACE = 2)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_onispace = 2)
 
 	req_components = list(
 		/obj/item/stock_parts/subspace/ansible = 2

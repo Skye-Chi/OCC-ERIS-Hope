@@ -239,7 +239,7 @@
 		if(spawnees & 8)
 			C = new(src.loc)
 			C.name = "Drone shielding controller"
-			C.origin_tech = list(TECH_BLUESPACE = rand(3,6))
+			C.origin_tech = list(TECH_onispace = rand(3,6))
 
 		if(spawnees & 16)
 			C = new(src.loc)

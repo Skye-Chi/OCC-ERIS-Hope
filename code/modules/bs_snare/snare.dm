@@ -1,10 +1,10 @@
 /obj/item/clothing/accessory/bs_silk
-	name = "bluespace snare"
-	desc = "A bluespace snare. Looking at the edges of this thing, you see a faint blue ripple and spatial distortion."
+	name = "onispace snare"
+	desc = "A onispace snare. Looking at the edges of this thing, you see a faint blue ripple and spatial distortion."
 	icon = 'icons/obj/rig_modules.dmi'
 	icon_state = "teleporter"
 	w_class = ITEM_SIZE_SMALL
-	origin_tech = list(TECH_BLUESPACE = 6)
+	origin_tech = list(TECH_onispace = 6)
 	//var/locking_access = access_rd
 	var/silk_id = "" //using by snare controller to teleport user to controller's mark
 

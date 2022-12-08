@@ -349,17 +349,17 @@ End Occulus Edit*/
 /* Occulus Edit: Disabled
 /datum/uplink_item/item/tools/blitz_harpoon
 	name = "Blitzshell Blue Space Harpoon"
-	desc = "Activates the embedded bluespace harpoon."
+	desc = "Activates the embedded onispace harpoon."
 	item_cost = 12
 	antag_roles = list() // list(ROLE_BLITZ) -- Syzygy edit to disable biltz getting BS harps
 
 /datum/uplink_item/item/tools/blitz_harpoon/get_goods(var/obj/item/device/uplink/U, var/loc, var/mob/living/user)
 	if(user && istype(user, /mob/living/silicon/robot/drone/blitzshell))
 		var/mob/living/silicon/robot/drone/blitzshell/BS = user
-		if(locate(/obj/item/bluespace_harpoon/mounted/blitz) in BS.module.modules)
-			to_chat(BS, SPAN_WARNING("You already have a bluespace harpoon installed."))
+		if(locate(/obj/item/onispace_harpoon/mounted/blitz) in BS.module.modules)
+			to_chat(BS, SPAN_WARNING("You already have a onispace harpoon installed."))
 			return
-		BS.module.modules += new /obj/item/bluespace_harpoon/mounted/blitz(BS.module)
+		BS.module.modules += new /obj/item/onispace_harpoon/mounted/blitz(BS.module)
 		return TRUE
 */
 /datum/uplink_item/item/tools/mindreader

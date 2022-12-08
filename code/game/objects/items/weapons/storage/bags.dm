@@ -76,7 +76,7 @@
 
 /obj/item/storage/bag/trash/holding/New()
 	..()
-	bluespace_entropy(4, get_turf(src))
+	onispace_entropy(4, get_turf(src))
 
 /obj/item/storage/bag/trash/holding/on_update_icon()
 	return
@@ -120,7 +120,7 @@
 	max_storage_space = INFINITY
 	max_w_class = ITEM_SIZE_BULKY
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_GOLD = 4, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
-	origin_tech = list(TECH_BLUESPACE = 4)
+	origin_tech = list(TECH_onispace = 4)
 	can_hold = list(/obj/item/ore,
 	                /obj/item/reagent_containers/food/snacks/grown,
 	                /obj/item/seeds,
@@ -130,7 +130,7 @@
 
 /obj/item/storage/bag/ore/holding/New()
 	..()
-	bluespace_entropy(10, get_turf(src))
+	onispace_entropy(10, get_turf(src))
 
 // -----------------------------
 //          Produce bag

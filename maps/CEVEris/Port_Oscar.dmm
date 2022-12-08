@@ -47344,7 +47344,7 @@
 	},
 /area/eris/command/tcommsat/chamber)
 "tXi" = (
-/obj/machinery/bluespacerelay,
+/obj/machinery/onispacerelay,
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 180;
@@ -52171,7 +52171,7 @@
 	},
 /obj/structure/sign/goldenplaque{
 	desc = "The current employee of the month of the Board, and the previous ones. There are a lot more than you remember.";
-	name = "Northern Light Medals Board";
+	name = "ICSS Hope Medals Board";
 	pixel_y = 32
 	},
 /turf/simulated/floor/carpet/turcarpet,

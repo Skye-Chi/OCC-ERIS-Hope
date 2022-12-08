@@ -82,7 +82,7 @@
 			if(animal.stat != DEAD) //got roach, spider, maybe bear
 				animal.take_overall_damage(damage)
 				do_sparks(5, 0, animal.loc)//Occulus Edit, Obelisk feedback
-				bluespace_entropy(1, get_turf(animal))//Occulus Edit, Obelisk feedback
+				onispace_entropy(1, get_turf(animal))//Occulus Edit, Obelisk feedback
 				playsound(animal.loc, "sparks", 50, 1)//Occulus Edit, Obelisk feedback
 				if(animal.stat == DEAD)
 					eotp.addObservation(5)
@@ -93,7 +93,7 @@
 			if(animal.stat != DEAD) //got bear or something
 				animal.take_overall_damage(damage)
 				do_sparks(5, 0, animal.loc)//Occulus Edit, Obelisk feedback
-				bluespace_entropy(1, get_turf(animal))//Occulus Edit, Obelisk feedback
+				onispace_entropy(1, get_turf(animal))//Occulus Edit, Obelisk feedback
 				playsound(animal.loc, "sparks", 50, 1)//Occulus Edit, Obelisk feedback
 				if(animal.stat == DEAD)
 					eotp.addObservation(1)
@@ -103,7 +103,7 @@
 	if(to_fire)//If there is anything else left, fuck up the plants
 		for(var/obj/effect/plant/shroom in GLOB.all_maintshrooms)
 			if(shroom.z == src.z && get_dist(src, shroom) <= area_radius)
-				bluespace_entropy(1, get_turf(shroom))//Occulus Edit, Obelisk feedback
+				onispace_entropy(1, get_turf(shroom))//Occulus Edit, Obelisk feedback
 				playsound(shroom.loc, "sparks", 50, 1)//Occulus Edit, Obelisk feedback
 				qdel(shroom)
 				if(!--to_fire)

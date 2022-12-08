@@ -17279,7 +17279,7 @@
 /area/space)
 "aQH" = (
 /obj/map_data/eris{
-	name = "Northern Light"
+	name = "ICSS Hope"
 	},
 /turf/space,
 /area/space)
@@ -35040,7 +35040,7 @@
 	},
 /area/eris/command/tcommsat/chamber)
 "bFA" = (
-/obj/machinery/bluespacerelay,
+/obj/machinery/onispacerelay,
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 180;
@@ -45953,8 +45953,8 @@
 /area/eris/neotheology/storage)
 "ceK" = (
 /obj/machinery/button/remote/blast_door/id_card{
-	id = "Bluespace_Biosyphon";
-	name = "Bluespace Biosyphon id lock";
+	id = "onispace_Biosyphon";
+	name = "onispace Biosyphon id lock";
 	pixel_x = -28;
 	req_access = list(1)
 	},
@@ -46110,7 +46110,7 @@
 /obj/structure/table/rack,
 /obj/item/biosyphon,
 /obj/machinery/door/blast/shutters/glass{
-	id = "Bluespace_Biosyphon"
+	id = "onispace_Biosyphon"
 	},
 /obj/machinery/light{
 	dir = 8
@@ -52468,7 +52468,7 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/reinforced/RD,
-/obj/item/bluespace_harpoon,
+/obj/item/onispace_harpoon,
 /turf/simulated/floor/carpet/purcarpet,
 /area/eris/command/meo)
 "cvj" = (

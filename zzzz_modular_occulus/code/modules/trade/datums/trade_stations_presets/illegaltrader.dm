@@ -10,7 +10,7 @@
 		/obj/item/part/armor,
 		/obj/item/part/gun,
 		/obj/item/beartrap,
-		/obj/item/bluespace_harpoon,
+		/obj/item/onispace_harpoon,
 		/obj/item/emp_mine,
 		/obj/item/grenade/empgrenade,
 		/obj/item/grenade/frag,

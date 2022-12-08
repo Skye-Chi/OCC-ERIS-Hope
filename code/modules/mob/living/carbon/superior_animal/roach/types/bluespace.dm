@@ -1,10 +1,10 @@
-/mob/living/carbon/superior_animal/roach/bluespace
-	name = "Bluespace roach"
-	desc = "A bluespace roach"
-	icon_state = "bluespaceroach"
+/mob/living/carbon/superior_animal/roach/onispace
+	name = "onispace roach"
+	desc = "A onispace roach"
+	icon_state = "onispaceroach"
 	maxHealth = 25
 	health = 25
-	meat_type = /obj/item/bluespace_crystal
+	meat_type = /obj/item/onispace_crystal
 	melee_damage_lower = 3
 	melee_damage_upper = 10
 	sanity_damage = 1
@@ -13,11 +13,11 @@
 	var/chance_tele_to_eat = 25
 	var/chance_tele_to_random = 10
 
-/mob/living/carbon/superior_animal/roach/bluespace/Initialize(mapload)
+/mob/living/carbon/superior_animal/roach/onispace/Initialize(mapload)
 	. = ..()
 	do_sparks(3, 0, src.loc)
 
-/mob/living/carbon/superior_animal/roach/bluespace/handle_ai()
+/mob/living/carbon/superior_animal/roach/onispace/handle_ai()
 	if(!..())
 		return FALSE
 
@@ -34,7 +34,7 @@
 		do_teleport(src, target, 1)
 		playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1, -3)
 
-/mob/living/carbon/superior_animal/roach/bluespace/attackby(obj/item/W, mob/user, params)
+/mob/living/carbon/superior_animal/roach/onispace/attackby(obj/item/W, mob/user, params)
 	if(prob(change_tele_to_mob))
 		var/source = src
 		if(target_mob)
@@ -45,7 +45,7 @@
 		return FALSE
 	. = ..()
 
-/mob/living/carbon/superior_animal/roach/bluespace/attack_hand(mob/living/carbon/M as mob)
+/mob/living/carbon/superior_animal/roach/onispace/attack_hand(mob/living/carbon/M as mob)
 	if(M.a_intent != I_HELP && prob(change_tele_to_mob))
 		var/source = src
 		if(target_mob)
@@ -56,7 +56,7 @@
 		return FALSE
 	. = ..()
 
-/mob/living/carbon/superior_animal/roach/bluespace/bullet_act(obj/item/projectile/P, def_zone)
+/mob/living/carbon/superior_animal/roach/onispace/bullet_act(obj/item/projectile/P, def_zone)
 	if(prob(change_tele_to_mob))
 		var/source = src
 		if(target_mob)
@@ -67,7 +67,7 @@
 		return FALSE
 	. = ..()
 
-/mob/living/carbon/superior_animal/roach/bluespace/attack_generic(mob/user, damage, attack_message)
+/mob/living/carbon/superior_animal/roach/onispace/attack_generic(mob/user, damage, attack_message)
 	if(!damage || !istype(user))
 		return FALSE
 	if(prob(change_tele_to_mob))

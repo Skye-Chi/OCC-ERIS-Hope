@@ -40,7 +40,7 @@
 /obj/item/weapon/tool/sword/nt
 /obj/item/weapon/tool/sword/katana/nano
 /obj/item/weapon/tool/knife/dagger/ceremonial
-/obj/item/weapon/tool/knife/dagger/bluespace
+/obj/item/weapon/tool/knife/dagger/onispace
 /obj/item/weapon/tool/knife/dagger/assassin
 /obj/item/weapon/tool/knife/neotritual
 /obj/item/weapon/tool/crowbar/onestar
@@ -92,7 +92,7 @@
 /obj/item/weapon/storage/pouch/holding
 /obj/item/weapon/storage/toolbox/syndicate
 /obj/item/weapon/reagent_containers/glass/beaker/vial/uncapnanites
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace
+/obj/item/weapon/reagent_containers/glass/beaker/onispace
 /obj/item/weapon/reagent_containers/glass/beaker/noreact
 /obj/item/weapon/reagent_containers/glass/beaker/cryoxadone
 /obj/item/weapon/reagent_containers/glass/replenishing
@@ -580,7 +580,7 @@
 /obj/item/slime_extract/black
 /obj/item/slime_extract/oil
 /obj/item/slime_extract/adamantine
-/obj/item/slime_extract/bluespace
+/obj/item/slime_extract/onispace
 /obj/item/slime_extract/pyrite
 /obj/item/slime_extract/cerulean
 /obj/item/slime_extract/sepia
@@ -591,7 +591,7 @@
 =======
 >>>>>>> 171348a... fix: badly initialized atoms. (#5669)
 /mob/living/carbon/superior_animal/roach/roachling
-/mob/living/carbon/superior_animal/roach/bluespace
+/mob/living/carbon/superior_animal/roach/onispace
 /mob/living/carbon/superior_animal/roach/kaiser
 /mob/living/bot/miningonestar/resources/agressive/with_support
 /mob/living/bot/miningonestar/resources/agressive

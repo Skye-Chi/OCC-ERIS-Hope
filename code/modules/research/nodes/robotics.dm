@@ -167,7 +167,7 @@
 	icon = "vindicator" // TODO change icon
 
 	required_technologies = list(/datum/technology/mech_durand)
-	required_tech_levels = list() // Add some bluespace requirement?
+	required_tech_levels = list() // Add some onispace requirement?
 	cost = 4000
 
 	unlocks_designs = list(

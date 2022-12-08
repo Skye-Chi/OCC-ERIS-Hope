@@ -104,9 +104,9 @@
 	required_reagents = list("mindbreaker" =2, "pacid" =2)
 	result_amount = 2
 
-/datum/chemical_reaction/liquid_bluespace
-	result = "liquid_bluespace"
-	required_reagents = list("bluespace_dust" =1, "mercury" = 1)
+/datum/chemical_reaction/liquid_onispace
+	result = "liquid_onispace"
+	required_reagents = list("onispace_dust" =1, "mercury" = 1)
 	result_amount = 1
 
 /datum/chemical_reaction/aloe

@@ -6,7 +6,7 @@
 	This may require engineering to wall them off, or ironhammer to guard them, to prevent unauthorised access
 	If conveniently placed,they may also offer new, rapid transit routes around the ship
 */
-/* OCCULUS EDIT - Disabled since this is inherently broken unlike the bluespace rift event which is literally the same thing but better.
+/* OCCULUS EDIT - Disabled since this is inherently broken unlike the onispace rift event which is literally the same thing but better.
 /datum/storyevent/wormholes
 	id = "wormholes"
 	name = "wormholes"

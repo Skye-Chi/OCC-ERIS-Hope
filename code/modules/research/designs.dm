@@ -92,10 +92,10 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/reagent_containers/glass/beaker/noreact
 	sort_string = "MADAA"
 
-/datum/design/research/item/beaker/bluespace
-	name = "bluespace"
-	desc = "A bluespace beaker, powered by experimental bluespace technology and Element Cuban combined with the Compound Pete. Can hold up to 300 units."
-	build_path = /obj/item/reagent_containers/glass/beaker/bluespace
+/datum/design/research/item/beaker/onispace
+	name = "onispace"
+	desc = "A onispace beaker, powered by experimental onispace technology and Element Cuban combined with the Compound Pete. Can hold up to 300 units."
+	build_path = /obj/item/reagent_containers/glass/beaker/onispace
 	sort_string = "MADAB"
 
 /datum/design/research/item/medical/nanopaste
@@ -156,51 +156,51 @@ other types of metals and chemistry for reagents).
 	sort_string = "VACBB"
 
 /datum/design/research/item/beacon
-	name = "Bluespace tracking beacon design"
+	name = "onispace tracking beacon design"
 	build_path = /obj/item/device/radio/beacon
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VADAA"
 
 /datum/design/research/item/bag_holding
 	name = "'Bag of Holding', an infinite capacity bag prototype"
-	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
+	desc = "Using localized pockets of onispace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
 	build_path = /obj/item/storage/backpack/holding
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VAEAA"
 
 /datum/design/research/item/belt_holding
 	name = "'Belt of Holding', an infinite capacity belt prototype"
-	desc = "Using localized pockets of bluespace this belt prototype offers incredible storage capacity with the contents weighting nothing."
+	desc = "Using localized pockets of onispace this belt prototype offers incredible storage capacity with the contents weighting nothing."
 	build_path = /obj/item/storage/belt/holding
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VAEAB"
 
 /datum/design/research/item/pouch_holding
 	name = "'Pouch of Holding', an infinite capacity pouch prototype"
-	desc = "Using localized pockets of bluespace this pouch prototype offers incredible storage capacity with the contents weighting nothing."
+	desc = "Using localized pockets of onispace this pouch prototype offers incredible storage capacity with the contents weighting nothing."
 	build_path = /obj/item/storage/pouch/holding
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VAEAC"
 
 /datum/design/research/item/trashbag_holding
 	name = "'Trashbag of Holding', an infinite capacity trashbag prototype"
-	desc = "Using localized pockets of bluespace this trashbag prototype offers incredible storage capacity with the contents weighting nothing."
+	desc = "Using localized pockets of onispace this trashbag prototype offers incredible storage capacity with the contents weighting nothing."
 	build_path = /obj/item/storage/bag/trash/holding
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VAEAD"
 
 /datum/design/research/item/oresatchel_holding
 	name = "'Ore satchel of Holding', an infinite capacity ore satchel prototype"
-	desc = "Using localized pockets of bluespace this ore satchel prototype offers incredible storage capacity with the contents weighting nothing."
+	desc = "Using localized pockets of onispace this ore satchel prototype offers incredible storage capacity with the contents weighting nothing."
 	build_path = /obj/item/storage/bag/ore/holding
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VAEAE"
 
 /datum/design/research/item/binaryencrypt
 	name = "Binary encryption key"
 	desc = "Allows for deciphering the binary channel on-the-fly."
 	build_path = /obj/item/device/encryptionkey/binary
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "VASAA"
 
 /datum/design/research/item/glowstick

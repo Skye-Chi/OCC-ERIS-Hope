@@ -20,7 +20,7 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"80s All Over Again" = /music_track/eighties,
 	"Wild Encounters" = /music_track/wildencounters,
 	"Metropolis" = /music_track/metropolis,
-	"Bluespace" = /music_track/bluespace,
+	"onispace" = /music_track/onispace,
 	"Exploring" = /music_track/exploring,
 	"The Runner in Motion" = /music_track/runner,
 	"Neotheology" = /music_track/neotheology,

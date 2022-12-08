@@ -71,43 +71,43 @@
 // Telecomm parts
 /datum/design/research/item/part/subspace_ansible
 	build_path = /obj/item/stock_parts/subspace/ansible
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAA"
 
 /datum/design/research/item/part/hyperwave_filter
 	build_path = /obj/item/stock_parts/subspace/filter
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAB"
 
 /datum/design/research/item/part/subspace_amplifier
 	build_path = /obj/item/stock_parts/subspace/amplifier
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAC"
 
 /datum/design/research/item/part/subspace_treatment
 	build_path = /obj/item/stock_parts/subspace/treatment
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAD"
 
 /datum/design/research/item/part/subspace_analyzer
 	build_path = /obj/item/stock_parts/subspace/analyzer
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAE"
 
 /datum/design/research/item/part/subspace_crystal
 	build_path = /obj/item/stock_parts/subspace/crystal
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAF"
 
 /datum/design/research/item/part/subspace_transmitter
 	build_path = /obj/item/stock_parts/subspace/transmitter
-	category = "Telecoms | Bluespace"
+	category = "Telecoms | onispace"
 	sort_string = "UAAAG"
 
 /datum/design/research/item/part/artificialbscrystal
-	name = "Artificial BlueSpace Crystal"
-	build_path = /obj/item/bluespace_crystal/artificial
-	category = "Telecoms | Bluespace"
+	name = "Artificial onispace Crystal"
+	build_path = /obj/item/onispace_crystal/artificial
+	category = "Telecoms | onispace"
 	sort_string = "VAAAF"
 
 // SMES coils

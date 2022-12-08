@@ -24,7 +24,7 @@
 /datum/lobbyscreen/ship
 	image_file = 'icons/title_screens/ship.png'
 	possibleMusic = list(
-		'sound/music/lobby/Duke_Gneiss-Bluespace.ogg',
+		'sound/music/lobby/Duke_Gneiss-onispace.ogg',
 		'sound/music/lobby/Duke_Gneiss-Exploring.ogg'
 		)
 

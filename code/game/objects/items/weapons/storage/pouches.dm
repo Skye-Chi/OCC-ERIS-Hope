@@ -283,19 +283,19 @@
 
 /obj/item/storage/pouch/holding
 	name = "pouch of holding"
-	desc = "If your pockets are not large enough to store all your belongings, you may want to use this high-tech pouch that opens into a localized pocket of bluespace (pun intended)."
+	desc = "If your pockets are not large enough to store all your belongings, you may want to use this high-tech pouch that opens into a localized pocket of onispace (pun intended)."
 	icon_state = "holdingpouch"
 	item_state = "holdingpouch"
 	storage_slots = 7
 	max_w_class = ITEM_SIZE_BULKY
 	max_storage_space = DEFAULT_HUGE_STORAGE
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_GOLD = 5, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
-	origin_tech = list(TECH_BLUESPACE = 4)
+	origin_tech = list(TECH_onispace = 4)
 	spawn_blacklisted = TRUE
 
 /obj/item/storage/pouch/holding/New()
 	..()
-	bluespace_entropy(3, get_turf(src))
+	onispace_entropy(3, get_turf(src))
 
 /obj/item/storage/pouch/gun_part
 	name = "part pouch"

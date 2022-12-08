@@ -58,8 +58,8 @@
 	build_path = /obj/item/gun/energy/floragun
 	sort_string = "TBAAA"
 
-/datum/design/research/item/weapon/bluespace_harpoon
-	build_path = /obj/item/bluespace_harpoon
+/datum/design/research/item/weapon/onispace_harpoon
+	build_path = /obj/item/onispace_harpoon
 	sort_string = "TBAAB"
 
 /datum/design/research/item/weapon/hatton
@@ -76,9 +76,9 @@
 	build_path = /obj/item/tool/sword/katana/nano
 
 
-/datum/design/research/item/weapon/bluespace_dagger
+/datum/design/research/item/weapon/onispace_dagger
 	name = "NanoTrasen \"Displacement Dagger\""
-	build_path = /obj/item/tool/knife/dagger/bluespace
+	build_path = /obj/item/tool/knife/dagger/onispace
 
 // Ammo
 /datum/design/research/item/ammo

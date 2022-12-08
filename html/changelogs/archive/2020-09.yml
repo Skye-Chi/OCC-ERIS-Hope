@@ -56,9 +56,9 @@
   - code_imp: added circuitboards to /code/game/objects/items/weapons/circuitboards/machinery/research.dm
       component pricing is equal to NSV13
   - code_imp: added design definitions to /code/modules/research/designs/circuits.dm
-  - tweak: lowered artificial bluespace crystal cost to 5 diamond and 5 plasma
+  - tweak: lowered artificial onispace crystal cost to 5 diamond and 5 plasma
   - bugfix: Fix large grenades not exploding
-  - tweak: Bluespace trashbag construction is not free anymore
+  - tweak: onispace trashbag construction is not free anymore
   - bugfix: fixed dead cat icon in hands
   - bugfix: Vagabond's no longer show up as a blank entry on the crew records.
   - tweak: Vagabond's no longer show up as "Unknown" in the crew Manifest.
@@ -123,9 +123,9 @@
   - code_imp: Added new fresh GC code
   - refactor: Ported GC from tgstation
   - bugfix: bullets can leave shrapnel insidel the impacted organ
-  - rscadd: Blitzshells now have bluespace harpoons
+  - rscadd: Blitzshells now have onispace harpoons
   - tweak: Name and description changes of blitzshell's harpoon
-  - imageadd: New sprites of bluespace harpoons made by INFRARED_BARON.
+  - imageadd: New sprites of onispace harpoons made by INFRARED_BARON.
   - rscadd: Exosuit-mounted hydraulic clamps can now compress scrap into cubes for
       transport. These cubes can then be whacked with a decent amount of force (a
       crowbar should do) to decompress them and release the scrap pile. They can also
@@ -173,9 +173,9 @@
   - balance: Buffed amount biomatter per sheet from 1 to 10.
   - rscadd: Stats are now stored in soulcrypts
   - rscadd: Stats are transferred to new clones via the soulcrypt
-  - rscdel: Removed the bluespace harpoon from random loot
-  - rscdel: Removed the integrated bluespace harpoon from biltzshell drones
-  - balance: Excelsior agents no longer have to find a bluespace harpoon
+  - rscdel: Removed the onispace harpoon from random loot
+  - rscdel: Removed the integrated onispace harpoon from biltzshell drones
+  - balance: Excelsior agents no longer have to find a onispace harpoon
 2020-09-11:
   Toriate:
   - tweak: Biomatter sheet stacks can now stack up to 300 sheets

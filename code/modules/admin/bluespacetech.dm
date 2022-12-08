@@ -1,5 +1,5 @@
 /*
-// Bluespace Technician is a godmode avatar designed for debugging and admin actions
+// onispace Technician is a godmode avatar designed for debugging and admin actions
 // Their primary benefit is the ability to spawn in wherever you are, making it quick to get a human for your needs
 // They also have incorporeal flying movement if they choose, which is often the fastest way to get somewhere specific
 // They are mostly invincible, although godmode is a bit imperfect.
@@ -11,8 +11,8 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 
 /client/proc/cmd_dev_bst()
 	set category = "Debug"
-	set name = "Spawn Bluespace Tech"
-	set desc = "Spawns a Bluespace Tech to debug stuff"
+	set name = "Spawn onispace Tech"
+	set desc = "Spawns a onispace Tech to debug stuff"
 
 
 	if(!check_rights(R_ADMIN|R_DEBUG))
@@ -22,9 +22,9 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	var/mob/living/carbon/human/bst/bst = new(T)
 	bst.anchored = TRUE
 	bst.ckey = usr.ckey
-	bst.name = "Bluespace Technician"
-	bst.real_name = "Bluespace Technician"
-	bst.voice_name = "Bluespace Technician"
+	bst.name = "onispace Technician"
+	bst.real_name = "onispace Technician"
+	bst.voice_name = "onispace Technician"
 	bst.h_style = "Crewcut"
 	var/list/stat_modifiers = list(
 		STAT_ROB = 99,
@@ -61,7 +61,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	//Sort out ID
 	var/obj/item/card/id/bst/id = new/obj/item/card/id/bst(bst)
 	id.registered_name = bst.real_name
-	id.assignment = "Bluespace Technician"
+	id.assignment = "onispace Technician"
 	id.name = "[id.assignment]"
 	bst.equip_to_slot_or_del(id, slot_wear_id)
 	bst.update_inv_wear_id()
@@ -90,7 +90,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	spawn(10)
 		bst_post_spawn(bst)
 
-	log_admin("Bluespace Tech Spawned: X:[bst.x] Y:[bst.y] Z:[bst.z] User:[src]")
+	log_admin("onispace Tech Spawned: X:[bst.x] Y:[bst.y] Z:[bst.z] User:[src]")
 	return 1
 
 /client/proc/bst_post_spawn(mob/living/carbon/human/bst/bst)
@@ -143,7 +143,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 
 /mob/living/carbon/human/bst/verb/bstwalk()
 	set name = "Ruin Everything"
-	set desc = "Uses bluespace technology to phase through solid matter and move quickly."
+	set desc = "Uses onispace technology to phase through solid matter and move quickly."
 	set category = "BST"
 	set popup_menu = 0
 
@@ -158,7 +158,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 
 /mob/living/carbon/human/bst/verb/bstrecover()
 	set name = "Rejuv"
-	set desc = "Use the bluespace within you to restore your health"
+	set desc = "Use the onispace within you to restore your health"
 	set category = "BST"
 	set popup_menu = FALSE
 
@@ -174,7 +174,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 
 /mob/living/carbon/human/bst/verb/bstquit()
 	set name = "Teleport out"
-	set desc = "Activate bluespace to leave and return to your original mob (if you have one)."
+	set desc = "Activate onispace to leave and return to your original mob (if you have one)."
 	set category = "BST"
 
 	src.suicide()
@@ -199,8 +199,8 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	spawn_frequency = 0
 
 /obj/item/device/radio/headset/ert/bst
-	name = "bluespace technician's headset"
-	desc = "A Bluespace Technician's headset. The letters 'BST' are stamped on the side."
+	name = "onispace technician's headset"
+	desc = "A onispace Technician's headset. The letters 'BST' are stamped on the side."
 	translate_binary = TRUE
 	translate_hive = TRUE
 	keyslot1 = new /obj/item/device/encryptionkey/binary
@@ -221,8 +221,8 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	translate_hive = TRUE
 
 /obj/item/clothing/under/assistantformal/bst
-	name = "bluespace technician's uniform"
-	desc = "A Bluespace Technician's Uniform. There is a logo on the sleeve that reads 'BST'."
+	name = "onispace technician's uniform"
+	desc = "A onispace Technician's Uniform. There is a logo on the sleeve that reads 'BST'."
 	has_sensor = FALSE
 	sensor_mode = 0
 	siemens_coefficient = 0
@@ -240,7 +240,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 		..()
 
 /obj/item/clothing/gloves/color/white/bst
-	name = "bluespace technician's gloves"
+	name = "onispace technician's gloves"
 	desc = "A pair of modified gloves. The letters 'BST' are stamped on the side."
 	siemens_coefficient = 0
 	permeability_coefficient = 0
@@ -256,7 +256,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 		..()
 
 /obj/item/clothing/glasses/sunglasses/bst
-	name = "bluespace technician's glasses"
+	name = "onispace technician's glasses"
 	desc = "A pair of modified sunglasses. The word 'BST' is stamped on the side."
 	vision_flags = (SEE_TURFS|SEE_OBJS|SEE_MOBS)
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -292,7 +292,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 		..()
 
 /obj/item/clothing/shoes/color/black/bst
-	name = "bluespace technician's shoes"
+	name = "onispace technician's shoes"
 	desc = "A pair of black shoes with extra grip. The letters 'BST' are stamped on the side."
 	icon_state = "black"
 	item_flags = NOSLIP
@@ -307,7 +307,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_dev_bst, R_ADMIN|R_DEBUG, TRUE)
 	else
 		..()
 
-	return TRUE //Because Bluespace
+	return TRUE //Because onispace
 
 /obj/item/card/id/bst
 	icon_state = "centcom"

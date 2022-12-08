@@ -16,7 +16,7 @@
 	w_class = ITEM_SIZE_SMALL
 	throw_speed = 3
 	throw_range = 5
-	origin_tech = list(TECH_MAGNET = 1, TECH_BLUESPACE = 3)
+	origin_tech = list(TECH_MAGNET = 1, TECH_onispace = 3)
 	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1, MATERIAL_URANIUM = 1)
 	spawn_blacklisted = TRUE///obj/item/hand_tele
 	var/obj/item/cell/cell
@@ -24,7 +24,7 @@
 	var/portal_type = /obj/effect/portal
 	var/portal_fail_chance
 	var/cell_charge_per_attempt = 33
-	var/entropy_value = 1  //for bluespace entropy
+	var/entropy_value = 1  //for onispace entropy
 
 /obj/item/hand_tele/Initialize()
 	. = ..()
@@ -99,10 +99,10 @@
 	portal_type = /obj/effect/portal/unstable
 	portal_fail_chance = 50
 	cell_charge_per_attempt = 50
-	entropy_value = 3 //for bluespace entropy
+	entropy_value = 3 //for onispace entropy
 	spawn_blacklisted = FALSE
 	var/calibration_required = TRUE
-	entropy_value = 4 //for bluespace entropy
+	entropy_value = 4 //for onispace entropy
 
 /obj/item/hand_tele/handmade/attackby(obj/item/C, mob/living/user)
 	..()
@@ -113,7 +113,7 @@
 				user.drop_from_inventory(user.get_active_hand())
 				user.drop_from_inventory(user.get_inactive_hand())
 				if(teleport_location)
-					go_to_bluespace(get_turf(src), entropy_value, TRUE, user, teleport_location, 1)
+					go_to_onispace(get_turf(src), entropy_value, TRUE, user, teleport_location, 1)
 					return
 			if(do_after(user, 30))
 				if(calibration_required)
@@ -132,7 +132,7 @@
 					if(portal_fail_chance < 0)
 						portal_fail_chance = 0
 					calibration_required = FALSE
-					to_chat(user, SPAN_NOTICE("You carefully place the bluespace crystal into slot to the end, and tweak the circuit with your [C]. [src] now looks more reliable."))
+					to_chat(user, SPAN_NOTICE("You carefully place the onispace crystal into slot to the end, and tweak the circuit with your [C]. [src] now looks more reliable."))
 				else
 					to_chat(user, SPAN_WARNING("[src] is calibrated already. You can decalibrate it to sabotage the device."))
 
@@ -143,15 +143,15 @@
 	icon_state = "telespear"
 	item_state = "telespear"
 	slot_flags = SLOT_BACK
-	var/entropy_value = 1 //for bluespace entropy
+	var/entropy_value = 1 //for onispace entropy
 
 /obj/item/tele_spear/attack(mob/living/carbon/human/M, mob/living/carbon/user)
 	playsound(src.loc, 'sound/effects/EMPulse.ogg', 65, 1)
 	var/turf/teleport_location = pick( getcircle(user.loc, 8) )
 	if(prob(5))
-		go_to_bluespace(get_turf(src), entropy_value, FALSE, user, teleport_location, 1)
+		go_to_onispace(get_turf(src), entropy_value, FALSE, user, teleport_location, 1)
 	else
-		go_to_bluespace(get_turf(src), entropy_value, FALSE, M, teleport_location, 1)
+		go_to_onispace(get_turf(src), entropy_value, FALSE, M, teleport_location, 1)
 	qdel(src)
 	var/obj/item/stack/rods/R = new(M.loc)
 	user.put_in_active_hand(R)

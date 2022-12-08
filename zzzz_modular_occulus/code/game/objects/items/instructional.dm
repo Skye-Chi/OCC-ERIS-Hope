@@ -63,8 +63,8 @@
 	icon_state = "instructional_cog_book"
 
 /obj/item/oddity/instructional/common/cog/python
-	name = "Aerospace Engineering, Avian Biology, and Applications of Bluespace"
-	desc =	"A surprisingly in-depth study on the effects of bluespace on the airspeed velocty on unencumbered Swallows."
+	name = "Aerospace Engineering, Avian Biology, and Applications of onispace"
+	desc =	"A surprisingly in-depth study on the effects of onispace on the airspeed velocty on unencumbered Swallows."
 	icon_state = "instructional_cog_python"
 
 /obj/item/oddity/instructional/common/cog/nt

@@ -271,7 +271,7 @@ var/global/excelsior_last_draft = 0
 /obj/machinery/complant_teleporter/proc/complete_order(order_path, amount)
 	use_power(active_power_usage * 3)
 	new order_path(loc, amount)
-	bluespace_entropy(entropy_value, get_turf(src))
+	onispace_entropy(entropy_value, get_turf(src))
 	processing_order = FALSE
 
 /obj/machinery/complant_teleporter/attackby(obj/item/I, mob/user)

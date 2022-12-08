@@ -208,7 +208,7 @@
 /obj/item/weapon/electronics/circuitboard/electrolyzer
 /obj/item/weapon/electronics/circuitboard/clonepod
 /obj/item/weapon/electronics/circuitboard/clonescanner
-/obj/item/weapon/electronics/circuitboard/bluespacerelay
+/obj/item/weapon/electronics/circuitboard/onispacerelay
 /obj/item/weapon/electronics/circuitboard/excelsiorshieldwallgen
 /obj/item/weapon/electronics/circuitboard/excelsiorautolathe
 /obj/item/weapon/electronics/circuitboard/excelsiorreconstructor
@@ -317,7 +317,7 @@
 /obj/item/weapon/tool/sword
 /obj/item/weapon/tool/knife/dagger/nt
 /obj/item/weapon/tool/knife/dagger/ceremonial
-/obj/item/weapon/tool/knife/dagger/bluespace
+/obj/item/weapon/tool/knife/dagger/onispace
 /obj/item/weapon/tool/knife/dagger/assassin
 /obj/item/weapon/tool/knife/dagger
 /obj/item/weapon/tool/knife/boot
@@ -706,7 +706,7 @@
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape/nicotine
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape
 /obj/item/weapon/reagent_containers/glass/beaker/vial
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace
+/obj/item/weapon/reagent_containers/glass/beaker/onispace
 /obj/item/weapon/reagent_containers/glass/beaker/large
 /obj/item/weapon/reagent_containers/glass/beaker/noreact
 /obj/item/weapon/reagent_containers/glass/beaker/bowl
@@ -2786,7 +2786,7 @@
 /obj/item/seeds/tomatoseed
 /obj/item/seeds/killertomatoseed
 /obj/item/seeds/bluetomatoseed
-/obj/item/seeds/bluespacetomatoseed
+/obj/item/seeds/onispacetomatoseed
 /obj/item/seeds/cornseed
 /obj/item/seeds/poppyseed
 /obj/item/seeds/potatoseed
@@ -2990,7 +2990,7 @@
 /obj/item/slime_extract/black
 /obj/item/slime_extract/oil
 /obj/item/slime_extract/adamantine
-/obj/item/slime_extract/bluespace
+/obj/item/slime_extract/onispace
 /obj/item/slime_extract/pyrite
 /obj/item/slime_extract/cerulean
 /obj/item/slime_extract/sepia
@@ -3006,7 +3006,7 @@
 /mob/living/carbon/slime
 /mob/living/carbon/superior_animal/roach/roachling
 /mob/living/carbon/superior_animal/roach/hunter
-/mob/living/carbon/superior_animal/roach/bluespace
+/mob/living/carbon/superior_animal/roach/onispace
 /mob/living/carbon/superior_animal/roach/fuhrer
 /mob/living/carbon/superior_animal/roach/kaiser
 /mob/living/carbon/superior_animal/roach/support

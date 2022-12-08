@@ -3,7 +3,7 @@
 	desc = "A beacon used by a teleporter."
 	icon_state = "beacon"
 	item_state = "signaler"
-	origin_tech = list(TECH_BLUESPACE = 1)
+	origin_tech = list(TECH_onispace = 1)
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 1)
 	var/datum/gps_data/gps
 

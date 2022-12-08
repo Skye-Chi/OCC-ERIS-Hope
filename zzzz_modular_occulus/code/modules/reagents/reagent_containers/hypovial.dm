@@ -47,8 +47,8 @@
 	rarity_value = 50
 	possible_transfer_amounts = list(5,10,15)
 /*
-/obj/item/reagent_containers/glass/beaker/hypocartridge/bluespace
-	name = "bluespace hypovial"
+/obj/item/reagent_containers/glass/beaker/hypocartridge/onispace
+	name = "onispace hypovial"
 	icon_state = "hypovialbs"
 	rarity_value = 100
 	volume = 90
@@ -72,9 +72,9 @@
 	cached_icon = "hypoviallarge"
 */
 /*
-/obj/item/reagent_containers/glass/beaker/hypocartridge/large/bluespace
+/obj/item/reagent_containers/glass/beaker/hypocartridge/large/onispace
 	possible_transfer_amounts = list(5,10,15)
-	name = "bluespace large hypovial"
+	name = "onispace large hypovial"
 	volume = 240
 	rarity_value = 150
 	icon_state = "hypoviallargebs"

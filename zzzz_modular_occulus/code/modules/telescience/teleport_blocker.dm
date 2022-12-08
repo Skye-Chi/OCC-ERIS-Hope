@@ -1,6 +1,6 @@
 /obj/machinery/telesci_inhibitor
-	name = "bluespace inhibition node"
-	desc = "A double-layered network of ansible crystals which use area power distribution systems to cause massive interference in local bluespace fields, inhibiting teleportation."
+	name = "onispace inhibition node"
+	desc = "A double-layered network of ansible crystals which use area power distribution systems to cause massive interference in local onispace fields, inhibiting teleportation."
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	icon_state = "inhibitor"
 	anchored = TRUE
@@ -13,7 +13,7 @@
 /obj/machinery/telesci_inhibitor/proc/explode()
 	var/turf/T = get_turf(src)
 	explosion(T, -1, 1, 2, 5) //Like a landmine but with less flash.
-	bluespace_entropy(20, get_turf(src), TRUE)
+	onispace_entropy(20, get_turf(src), TRUE)
 	qdel(src)
 
 /obj/machinery/telesci_inhibitor/Initialize()

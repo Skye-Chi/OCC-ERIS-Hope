@@ -36,7 +36,7 @@
 	name = T_BOARD("teleporter control console")
 	rarity_value = 40
 	build_path = /obj/machinery/computer/teleporter
-	origin_tech = list(TECH_DATA = 2, TECH_BLUESPACE = 2)
+	origin_tech = list(TECH_DATA = 2, TECH_onispace = 2)
 
 /obj/item/electronics/circuitboard/secure_data
 	name = T_BOARD("security records console")

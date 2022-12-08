@@ -38,14 +38,14 @@
 			 			the experiments, and reported to have died in a \"work accident\" by NanoTrasen."}
 			author = "Unauthorized"
 
-	bluespace_research
+	onispace_research
 
 		announcement
 			round_time = 60*20
 			message = {"The new field of research trying to explain several interesting spacetime oddities,
-						also known as \"Bluespace Research\", has reached new heights. Of the several
+						also known as \"onispace Research\", has reached new heights. Of the several
 						hundred space stations now orbiting in Tau Ceti, fifteen are now specially equipped
-						to experiment with and research Bluespace effects. Rumours have it some of these
+						to experiment with and research onispace effects. Rumours have it some of these
 						stations even sport functional \"travel gates\" that can instantly move a whole research
 						team to an alternate reality."}
 
@@ -115,7 +115,7 @@
 			round_time = 60 * 60
 
 
-var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/bluespace_research, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
+var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/onispace_research, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
 
 proc/process_newscaster()
 	check_for_newscaster_updates(SSticker.newscaster_announcements)

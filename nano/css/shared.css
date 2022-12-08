@@ -882,7 +882,7 @@ th.bot {
 .icon-advmatterbin { background-position: -192px -32px; }
 .icon-supermatterbin { background-position: -224px -32px; }
 
-.icon-bluespacematterbin { background-position: 0px -64px; }
+.icon-onispacematterbin { background-position: 0px -64px; }
 .icon-rped { background-position: -32px -64px; }
 .icon-jawsoflife { background-position: -64px -64px; }
 .icon-Moebius_box1 { background-position: -256px -0px; }
@@ -913,7 +913,7 @@ th.bot {
 
 .icon-supercell { background-position: 0px -160px; }
 .icon-hypercell { background-position: -32px -160px; }
-.icon-bluespacecell { background-position: -64px -160px; }
+.icon-onispacecell { background-position: -64px -160px; }
 .icon-solarcontrol { background-position: -96px -160px; }
 .icon-generator { background-position: -128px -160px; }
 .icon-supergenerator { background-position: -160px -160px; }
@@ -923,9 +923,9 @@ th.bot {
 .icon-headset { background-position: 0px -192px; }
 .icon-communications { background-position: -32px -192px; }
 .icon-radiogrid { background-position: -64px -192px; }
-.icon-bluespacething { background-position: -96px -192px; }
+.icon-onispacething { background-position: -96px -192px; }
 .icon-teleporter { background-position: -128px -192px; }
-.icon-bluespacerped { background-position: -160px -192px; }
+.icon-onispacerped { background-position: -160px -192px; }
 .icon-bagofholding { background-position: -192px -192px; }
 .icon-cyborganalyzer { background-position: -224px -192px; }
 

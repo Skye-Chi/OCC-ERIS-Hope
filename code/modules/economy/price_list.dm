@@ -958,7 +958,7 @@
 /obj/item/flame/lighter/zippo
 	price_tag = 50
 
-/obj/item/bluespace_crystal
+/obj/item/onispace_crystal
 	price_tag = 500
 
 
@@ -1062,7 +1062,7 @@
 /obj/item/virusdish/price_tag = 300
 
 /obj/item/reagent_containers/price_tag = 1
-/obj/item/reagent_containers/glass/beaker/bluespace/price_tag = 300
+/obj/item/reagent_containers/glass/beaker/onispace/price_tag = 300
 /* SYZYGY Edit - This NEEDS to be commented out due to the way it's fucking coded. Because Eris coders hate us.
 /obj/item/reagent_containers/get_item_cost(export)
 	. = ..()
@@ -1094,7 +1094,7 @@
 
 /obj/item/inflatable/price_tag = 40
 
-/obj/item/tool/knife/dagger/bluespace/price_tag = 400
+/obj/item/tool/knife/dagger/onispace/price_tag = 400
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/price_tag = 75
 /obj/item/reagent_containers/food/snacks/meat/roachmeat/seuche/price_tag = 100

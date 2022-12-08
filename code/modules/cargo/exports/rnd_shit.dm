@@ -16,7 +16,7 @@
 	unit_name = "slime extract"
 	export_types = list(/obj/item/slime_extract)
 	exclude_types = list(/obj/item/slime_extract/adamantine,
-									/obj/item/slime_extract/bluespace)
+									/obj/item/slime_extract/onispace)
 
 /datum/export/rnd/slime_extract/adamantine
 	cost = 1000
@@ -24,8 +24,8 @@
 	export_types = list(/obj/item/slime_extract/adamantine)
 	exclude_types = list()
 
-/datum/export/rnd/slime_extract/bluespace
+/datum/export/rnd/slime_extract/onispace
 	cost = 1400
-	unit_name = "bluespace slime extract"
-	export_types = list(/obj/item/slime_extract/bluespace)
+	unit_name = "onispace slime extract"
+	export_types = list(/obj/item/slime_extract/onispace)
 	exclude_types = list()

@@ -131,7 +131,7 @@
 /obj/item/weapon/electronics/circuitboard/electrolyzer    blacklisted=0    spawn_value=5    price_tag=150   100    
 /obj/item/weapon/electronics/circuitboard/clonepod    blacklisted=0    spawn_value=5    price_tag=150   100    
 /obj/item/weapon/electronics/circuitboard/clonescanner    blacklisted=0    spawn_value=5    price_tag=150   100    
-/obj/item/weapon/electronics/circuitboard/bluespacerelay    blacklisted=0    spawn_value=2.5    price_tag=150   100    
+/obj/item/weapon/electronics/circuitboard/onispacerelay    blacklisted=0    spawn_value=2.5    price_tag=150   100    
 /obj/item/weapon/electronics/circuitboard/excelsiorshieldwallgen    blacklisted=1    spawn_value=5    price_tag=150   100    
 /obj/item/weapon/electronics/circuitboard/excelsiorautolathe    blacklisted=1    spawn_value=5    price_tag=150   100    
 /obj/item/weapon/electronics/circuitboard/excelsiorreconstructor    blacklisted=1    spawn_value=5    price_tag=150   100    
@@ -279,7 +279,7 @@
 /obj/item/weapon/tool/knife/neotritual    blacklisted=1    spawn_value=10    price_tag=20   100    
 /obj/item/weapon/tool/knife/tacknife    blacklisted=0    spawn_value=10    price_tag=20   100    
 /obj/item/weapon/tool/knife/dagger/ceremonial    blacklisted=1    spawn_value=6.66667    price_tag=20   100    
-/obj/item/weapon/tool/knife/dagger/bluespace    blacklisted=1    spawn_value=6.66667    price_tag=400   100    
+/obj/item/weapon/tool/knife/dagger/onispace    blacklisted=1    spawn_value=6.66667    price_tag=400   100    
 /obj/item/weapon/tool/knife/dagger/assassin    blacklisted=1    spawn_value=6.66667    price_tag=20   100    
 /obj/item/weapon/tool/knife/dagger    blacklisted=0    spawn_value=6.66667    price_tag=20   100    
 /obj/item/weapon/tool/knife/butterfly    blacklisted=0    spawn_value=4    price_tag=20   100    
@@ -652,7 +652,7 @@
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape/nicotine    blacklisted=0    spawn_value=5    price_tag=20   100    
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape    blacklisted=0    spawn_value=5    price_tag=20   100    
 /obj/item/weapon/reagent_containers/glass/beaker/vial    blacklisted=0    spawn_value=5    price_tag=20   100    
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace    blacklisted=1    spawn_value=5    price_tag=300   100    
+/obj/item/weapon/reagent_containers/glass/beaker/onispace    blacklisted=1    spawn_value=5    price_tag=300   100    
 /obj/item/weapon/reagent_containers/glass/beaker/large    blacklisted=0    spawn_value=2.5    price_tag=20   100    
 /obj/item/weapon/reagent_containers/glass/beaker/noreact    blacklisted=1    spawn_value=5    price_tag=20   100    
 /obj/item/weapon/reagent_containers/glass/beaker/bowl    blacklisted=0    spawn_value=5    price_tag=20   100    
@@ -1507,9 +1507,9 @@
 /obj/item/weapon/shield/riot    blacklisted=0    spawn_value=10    price_tag=500   100    
 /obj/item/weapon/shield/energy    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/weapon/shield    blacklisted=0    spawn_value=10    price_tag=0   100    
-/obj/item/weapon/bluespace_harpoon/mounted/blitz    blacklisted=1    spawn_value=10    price_tag=4000   100    
-/obj/item/weapon/bluespace_harpoon/mounted    blacklisted=1    spawn_value=10    price_tag=4000   100    
-/obj/item/weapon/bluespace_harpoon    blacklisted=1    spawn_value=10    price_tag=4000   100    
+/obj/item/weapon/onispace_harpoon/mounted/blitz    blacklisted=1    spawn_value=10    price_tag=4000   100    
+/obj/item/weapon/onispace_harpoon/mounted    blacklisted=1    spawn_value=10    price_tag=4000   100    
+/obj/item/weapon/onispace_harpoon    blacklisted=1    spawn_value=10    price_tag=4000   100    
 /obj/item/weapon/staff/broom    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/weapon/staff/gentcane    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/weapon/staff/stick    blacklisted=0    spawn_value=10    price_tag=0   100    
@@ -3312,8 +3312,8 @@
 /obj/item/pizzabox/mushroom    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/pizzabox/meat    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/pizzabox    blacklisted=0    spawn_value=10    price_tag=0   100    
-/obj/item/bluespace_crystal/artificial    blacklisted=0    spawn_value=10    price_tag=500   100    
-/obj/item/bluespace_crystal    blacklisted=0    spawn_value=10    price_tag=500   100    
+/obj/item/onispace_crystal/artificial    blacklisted=0    spawn_value=10    price_tag=500   100    
+/obj/item/onispace_crystal    blacklisted=0    spawn_value=10    price_tag=500   100    
 /obj/item/ammo_magazine/ammobox/pistol/practice    blacklisted=1    spawn_value=3.33333    price_tag=40   100    
 /obj/item/ammo_magazine/ammobox/pistol/hv    blacklisted=1    spawn_value=3.33333    price_tag=40   100    
 /obj/item/ammo_magazine/ammobox/pistol/rubber    blacklisted=0    spawn_value=20    price_tag=40   100    
@@ -3509,7 +3509,7 @@
 /obj/item/seeds/tomatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/seeds/killertomatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/seeds/bluetomatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
-/obj/item/seeds/bluespacetomatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
+/obj/item/seeds/onispacetomatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/seeds/cornseed    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/seeds/poppyseed    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/seeds/potatoseed    blacklisted=0    spawn_value=10    price_tag=0   100    
@@ -3714,7 +3714,7 @@
 /obj/item/slime_extract/black    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/slime_extract/oil    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/slime_extract/adamantine    blacklisted=0    spawn_value=10    price_tag=0   100    
-/obj/item/slime_extract/bluespace    blacklisted=0    spawn_value=10    price_tag=0   100    
+/obj/item/slime_extract/onispace    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/slime_extract/pyrite    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/slime_extract/cerulean    blacklisted=0    spawn_value=10    price_tag=0   100    
 /obj/item/slime_extract/sepia    blacklisted=0    spawn_value=10    price_tag=0   100    
@@ -4583,7 +4583,7 @@
 /obj/item/weapon/electronics/circuitboard/electrolyzer    blacklisted=0    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/electronics/circuitboard/clonepod    blacklisted=0    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/electronics/circuitboard/clonescanner    blacklisted=0    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
-/obj/item/weapon/electronics/circuitboard/bluespacerelay    blacklisted=0    spawn_value=2.37101   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
+/obj/item/weapon/electronics/circuitboard/onispacerelay    blacklisted=0    spawn_value=2.37101   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/electronics/circuitboard/excelsiorshieldwallgen    blacklisted=1    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/electronics/circuitboard/excelsiorautolathe    blacklisted=1    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/electronics/circuitboard/excelsiorreconstructor    blacklisted=1    spawn_value=4.50936   spawn_price=150   prob_accompanying_obj=100    accompanying_objs=nothing
@@ -4692,7 +4692,7 @@
 /obj/item/weapon/tool/sword    blacklisted=0    spawn_value=3.04171   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/nt    blacklisted=0    spawn_value=5.85508   spawn_price=120   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/ceremonial    blacklisted=1    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
-/obj/item/weapon/tool/knife/dagger/bluespace    blacklisted=1    spawn_value=5.66438   spawn_price=451   prob_accompanying_obj=100    accompanying_objs=nothing
+/obj/item/weapon/tool/knife/dagger/onispace    blacklisted=1    spawn_value=5.66438   spawn_price=451   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/assassin    blacklisted=1    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger    blacklisted=0    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/boot    blacklisted=0    spawn_value=4.69461   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
@@ -5081,7 +5081,7 @@
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape/nicotine    blacklisted=0    spawn_value=4.69318   spawn_price=20.3   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/reagent_containers/glass/beaker/vial/vape    blacklisted=0    spawn_value=4.69318   spawn_price=20.3   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/reagent_containers/glass/beaker/vial    blacklisted=0    spawn_value=4.69318   spawn_price=20.3   prob_accompanying_obj=100    accompanying_objs=nothing
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace    blacklisted=1    spawn_value=4.44811   spawn_price=303   prob_accompanying_obj=100    accompanying_objs=nothing
+/obj/item/weapon/reagent_containers/glass/beaker/onispace    blacklisted=1    spawn_value=4.44811   spawn_price=303   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/reagent_containers/glass/beaker/large    blacklisted=0    spawn_value=2.41976   spawn_price=21.2   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/reagent_containers/glass/beaker/noreact    blacklisted=1    spawn_value=4.69178   spawn_price=20.6   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/reagent_containers/glass/beaker/bowl    blacklisted=0    spawn_value=4.68637   spawn_price=21.8   prob_accompanying_obj=100    accompanying_objs=nothing

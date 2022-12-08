@@ -665,7 +665,7 @@
 /obj/structure/closet/proc/break_open()
 	welded = 0
 	update_icon()
-	//Do this to prevent contents from being opened into nullspace (read: bluespace)
+	//Do this to prevent contents from being opened into nullspace (read: onispace)
 	if(istype(loc, /obj/structure/bigDelivery))
 		var/obj/structure/bigDelivery/BD = loc
 		BD.unwrap()

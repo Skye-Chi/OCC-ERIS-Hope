@@ -55,7 +55,7 @@
 
 /obj/machinery/computer/telesci_console/Initialize()
 	. = ..()
-	addLog("Hawker-Nayala Bluespace Tunnel Console initialized. Welcome.")
+	addLog("Hawker-Nayala onispace Tunnel Console initialized. Welcome.")
 
 /obj/machinery/computer/telesci_console/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/tool/multitool))
@@ -80,14 +80,14 @@
 			tracking_beacon = FALSE
 	if(portalOpened && (!telepad || !telepad.portal))
 		portalOpened = FALSE
-		addLog("Telepad unable to maintain bluespace tunnel. Tunnel closed.")
+		addLog("Telepad unable to maintain onispace tunnel. Tunnel closed.")
 		resetMenus()
 
 	if(ticking)
 		totalProgress++
 		if(totalProgress >= totalDelay)
 			ticking = FALSE
-			progressMessage = "Pathfinding complete. Opening bluespace tunnel."
+			progressMessage = "Pathfinding complete. Opening onispace tunnel."
 			openPortal()
 			return TRUE
 
@@ -97,7 +97,7 @@
 				currentStage++
 		if(currentStage > delayStages.len)
 			ticking = FALSE
-			progressMessage = "Pathfinding complete. Opening bluespace tunnel."
+			progressMessage = "Pathfinding complete. Opening onispace tunnel."
 			openPortal()
 
 		if(currentStage <= 1)
@@ -108,7 +108,7 @@
 		if(currentStage > 1)
 			progressMessage = "Querying Relay [currentStage-1] for calculations."
 		if(currentStage > 5)
-			progressMessage = "Bypassing bluespace interference."
+			progressMessage = "Bypassing onispace interference."
 
 		var/numPings = rand(5, 15)
 		for(var/i in 1 to numPings)
@@ -139,7 +139,7 @@
 
 		if(inhibitorExploded)
 			var/obj/item/device/radio/headset/a = new /obj/item/device/radio/headset(null)
-			a.autosay("ALERT: Extreme bluespace disruption detected in [loc]. Equipment failure imm-m-...", "Bluespace Inhibition Node")
+			a.autosay("ALERT: Extreme onispace disruption detected in [loc]. Equipment failure imm-m-...", "onispace Inhibition Node")
 			qdel(a)
 
 
@@ -232,11 +232,11 @@
 	var/list/obj/machinery/telesci_relay/workingRelays = telepad.findWorkingRelays()
 
 	if(workingRelays.len <= 0)
-		addLog("No available relays detected. Please check to ensure at least one relay is aligned with the telepad on the X/Y axis, and has a bluespace crystal loaded.")
+		addLog("No available relays detected. Please check to ensure at least one relay is aligned with the telepad on the X/Y axis, and has a onispace crystal loaded.")
 		return FALSE
 
 	if(mastermindKey.len == 5 && workingRelays.len < 4)
-		addLog("Bluespace interference detected at target location. Four available relays are required to isolate accurate path.")
+		addLog("onispace interference detected at target location. Four available relays are required to isolate accurate path.")
 		return FALSE
 
 	var/bulls = 0
@@ -261,11 +261,11 @@
 			if(!relay.damageCrystal(1))
 				workingRelays -= relay
 				if(workingRelays.len <= 0)
-					addLog("Warning: Equipment failure detected. Relay failed to supply bluespace calculations via crystal interface. Please try calculation again after resolving issue.")
+					addLog("Warning: Equipment failure detected. Relay failed to supply onispace calculations via crystal interface. Please try calculation again after resolving issue.")
 					return FALSE
 				relay = pick(workingRelays)
 				if(!relay.damageCrystal(1))
-					addLog("Warning: Equipment failure detected. Relay failed to supply bluespace calculations via crystal interface. Please try calculation again after resolving issue.")
+					addLog("Warning: Equipment failure detected. Relay failed to supply onispace calculations via crystal interface. Please try calculation again after resolving issue.")
 					return FALSE
 			failedAttempts++
 		else
@@ -275,7 +275,7 @@
 		addLog("Warning: Insufficient crystals aligned with telepad. [failedAttempts] crystalline metastructure fault[failedAttempts == 1 ? "" : "s"] detected as a result of this pathing attempt.")
 	properInput = TRUE
 	if(bulls == mastermindKey.len)
-		addLog("Attempt successful. Effective bluespace pathway isolated.")
+		addLog("Attempt successful. Effective onispace pathway isolated.")
 		inputKey = list()
 		return TRUE
 	else
@@ -494,13 +494,13 @@
 			if(invalid)
 				addLog("Unable to pathfind to selected coordinates. Terminating calculation.")
 			else if(tracking_beacon)
-				addLog("Beginning automatic pathfinding calculations for bluespace tunnel to ([targetX],[targetY],[targetZ]).")
+				addLog("Beginning automatic pathfinding calculations for onispace tunnel to ([targetX],[targetY],[targetZ]).")
 				startPathfinding()
 			else if(dangerous)
-				addLog("Beginning manual calculations for bluespace tunnel to ([targetX],[targetY],[targetZ]). Warning: Bluespace interference detected.")
+				addLog("Beginning manual calculations for onispace tunnel to ([targetX],[targetY],[targetZ]). Warning: onispace interference detected.")
 				startMastermind()
 			else
-				addLog("Beginning manual calculations for bluespace tunnel to ([targetX],[targetY],[targetZ]).")
+				addLog("Beginning manual calculations for onispace tunnel to ([targetX],[targetY],[targetZ]).")
 				startMastermind()
 
 	if(menuOption == BS_MENU_MASTERMIND)
@@ -531,7 +531,7 @@
 					addLog("Error: No user detected. Please contact a system administrator.")
 	if(menuOption == BS_MENU_PATHFINDING)
 		if(href_list["startTimer"])
-			addLog("Starting path traversal for bluespace tunnel to ([targetX],[targetY],[targetZ]).")
+			addLog("Starting path traversal for onispace tunnel to ([targetX],[targetY],[targetZ]).")
 			if(user)
 				var/cogBonus = min(user.stats.getStat(STAT_COG)/10, 4)
 				startTimer(baseDelay = (BS_PATHING_DELAY - cogBonus))
@@ -542,7 +542,7 @@
 			addLog("Pathfinding cancelled. Returning to selection menu.")
 			closePortal() //closePortal works while portal is not open, and clears relays in use.
 		else
-			addLog("Closing bluespace tunnel by user request.")
+			addLog("Closing onispace tunnel by user request.")
 			closePortal()
 
 	ui_interact(user)
@@ -555,7 +555,7 @@
 // Effects that telegraph the portal to onlookers.
 
 /obj/effect/telesci_ping
-	name = "bluespace flicker"
+	name = "onispace flicker"
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	layer = ABOVE_LIGHTING_LAYER
 
@@ -566,13 +566,13 @@
 	QDEL_IN(src, 1 SECOND)
 
 /obj/effect/telesci_portal_telegraph
-	name = "bluespace rift"
+	name = "onispace rift"
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	icon_state = "portal-telegraph-startup"
 	layer = ABOVE_LIGHTING_LAYER
 
 /obj/effect/telesci_portal_construct
-	name = "bluespace rift"
+	name = "onispace rift"
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	icon_state = "portal-telegraph"
 	layer = ABOVE_LIGHTING_LAYER

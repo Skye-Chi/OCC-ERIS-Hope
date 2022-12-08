@@ -139,7 +139,7 @@
 	else
 		return mask
 
-/proc/generate_bluespace_icon(icon/source, state)
+/proc/generate_onispace_icon(icon/source, state)
 
 	var/icon/mask = bsi_generate_mask(source, state)
 
@@ -164,15 +164,15 @@
 
 	unaffected.Blend(temp, ICON_MULTIPLY)
 
-	var/icon/bluespaced = icon(mask)
-	bluespaced.MapColors(
+	var/icon/onispaced = icon(mask)
+	onispaced.MapColors(
 			0, 0, 0, 0,
 			0, 0, 0, 1,
 			0, 0, 0, 0,
 			0, 0, 0, 0,
 			1, 1, 1, 0)
 
-	bluespaced.Blend(icon(source, state), ICON_MULTIPLY)
+	onispaced.Blend(icon(source, state), ICON_MULTIPLY)
 
 	var/list/frames = list(
 			list(0.000,20),
@@ -225,7 +225,7 @@
 
 		frames[f] = list(0.8, 1)
 
-	var/icon/result = generate_color_animation(bluespaced, colors, frames)
+	var/icon/result = generate_color_animation(onispaced, colors, frames)
 	result.Blend(unaffected, ICON_UNDERLAY)
 
 	return result
@@ -234,10 +234,10 @@
 
 /atom/verb/test()
 	set src in view()
-	src.icon = generate_bluespace_icon(src.icon, src.icon_state)
+	src.icon = generate_onispace_icon(src.icon, src.icon_state)
 
 /mob/verb/bluespam()
 	for(var/turf/t in RANGE_TURFS(5, src))
 		var/obj/s = new /obj/square(t)
-		s.icon = generate_bluespace_icon(s.icon, s.icon_state)
+		s.icon = generate_onispace_icon(s.icon, s.icon_state)
 

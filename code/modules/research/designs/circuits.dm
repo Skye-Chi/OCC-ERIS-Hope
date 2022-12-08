@@ -443,13 +443,13 @@
 	category = CAT_BLUE
 
 /datum/design/research/circuit/bssilk/console
-	name = "Bluespace Snare Control Console"
+	name = "onispace Snare Control Console"
 	build_path = /obj/item/electronics/circuitboard/bssilk_cons
 	sort_string = "VAAAK"
 	category = CAT_BLUE
 
 /datum/design/research/circuit/bssilk/hub
-	name = "Bluespace Snare Hub"
+	name = "onispace Snare Hub"
 	build_path = /obj/item/electronics/circuitboard/bssilk_hub
 	sort_string = "VAAAG"
 	category = CAT_BLUE

@@ -1,4 +1,4 @@
-//The Bluespace Drive//
+//The onispace Drive//
 //This thing is spoiler heavy. Do not map this or use it WITHOUT MY PERMISSION -Ikky
 //Unless you're downstream then I can't stop you.
 
@@ -38,20 +38,20 @@
 	..()
 	user.visible_message(SPAN_NOTICE("[user] hits [src] with [I] and disappears!"), SPAN_NOTICE("You hit [src] with [I] and disappear!"))
 	user.drop_item()
-	go_to_bluespace(get_turf(src), 8, TRUE, I, src, aprecision=16)
-	go_to_bluespace(get_turf(src), 8, TRUE, user, src, aprecision=16)
+	go_to_onispace(get_turf(src), 8, TRUE, I, src, aprecision=16)
+	go_to_onispace(get_turf(src), 8, TRUE, user, src, aprecision=16)
 
 
 /obj/machinery/bsd/attack_hand(mob/user)
 	..()
 	if(user.a_intent == I_HURT)
 		user.visible_message(SPAN_NOTICE("[user] hits [src] and disappears!"), SPAN_NOTICE("You hit [src] and disappear!"))
-		go_to_bluespace(get_turf(src), 8, TRUE, user, src, aprecision=16)
+		go_to_onispace(get_turf(src), 8, TRUE, user, src, aprecision=16)
 
 /obj/machinery/bsd/hitby(AM as mob|obj)
 	..()
 	if(ismob(AM) || isobj(AM))
 		visible_message(SPAN_DANGER("[AM] strikes [src] and disappears!"))
-		go_to_bluespace(get_turf(src), 8, TRUE, AM, src, aprecision=16)
+		go_to_onispace(get_turf(src), 8, TRUE, AM, src, aprecision=16)
 
 

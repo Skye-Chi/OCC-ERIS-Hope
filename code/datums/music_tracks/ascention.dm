@@ -5,12 +5,12 @@
 	song = 'sound/music/lobby/Duke_Gneiss-Metropolis.ogg'
 	url = "https://soundcloud.com/dukegneiss/metropolis"
 
-/music_track/bluespace //Track 8
+/music_track/onispace //Track 8
 	artist = "Duke Gneiss"
-	title = "Bluespace"
+	title = "onispace"
 	album = "Ascention"
-	song = 'sound/music/lobby/Duke_Gneiss-Bluespace.ogg'
-	url = "https://soundcloud.com/dukegneiss/bluespace"
+	song = 'sound/music/lobby/Duke_Gneiss-onispace.ogg'
+	url = "https://soundcloud.com/dukegneiss/onispace"
 
 /music_track/exploring //Track 13
 	artist = "Duke Gneiss"

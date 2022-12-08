@@ -4,7 +4,7 @@
 	icon_state = "implant_deathalarm"
 	implant_overlay = "implantstorage_deathalarm"
 	var/mobname = "Will Robinson"
-	origin_tech = list(TECH_BLUESPACE=1, TECH_MAGNET=2, TECH_DATA=4, TECH_BIO=3)
+	origin_tech = list(TECH_onispace=1, TECH_MAGNET=2, TECH_DATA=4, TECH_BIO=3)
 
 /obj/item/implant/death_alarm/get_data()
 	var/data = {"

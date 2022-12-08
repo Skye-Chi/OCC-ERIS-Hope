@@ -30,7 +30,7 @@ var/runtime_diary
 var/diary              
 var/world_qdel_log
 var/href_logfile       
-var/station_name        = "CEV Northern Light" //Occulus edits
+var/station_name        = "ICSS Hope" //Occulus edits
 var/station_short       = "Northern Light"
 var/const/dock_name     = "N.A.S. Crescent"
 var/const/boss_name     = "NL Command Board"

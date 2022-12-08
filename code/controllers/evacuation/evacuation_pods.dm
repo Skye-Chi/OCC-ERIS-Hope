@@ -1,7 +1,7 @@
 #define EVAC_OPT_ABANDON_SHIP "abandon_ship"
 #define EVAC_OPT_CANCEL_ABANDON_SHIP "cancel_abandon_ship"
 
-// Apparently, emergency_evacuation --> "abandon ship" and !emergency_evacuation --> "bluespace jump"
+// Apparently, emergency_evacuation --> "abandon ship" and !emergency_evacuation --> "onispace jump"
 // That stuff should be moved to the evacuation option datums but someone can do that later
 
 /datum/evacuation_controller/starship
@@ -43,7 +43,7 @@
 
 /datum/evacuation_controller/starship/finish_evacuation()
 	..()
-	if(!emergency_evacuation) //bluespace jump
+	if(!emergency_evacuation) //onispace jump
 		SetUniversalState(/datum/universal_state) //clear jump state
 
 /datum/evacuation_controller/starship/available_evac_options()
@@ -88,7 +88,7 @@
 	if (evacuation_controller && evacuation_controller.cancel_evacuation())
 		log_and_message_admins("[key_name(user)] has cancelled abandonment of the spacecraft.")
 
-/obj/screen/fullscreen/bluespace_overlay
+/obj/screen/fullscreen/onispace_overlay
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "mfoam"
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
