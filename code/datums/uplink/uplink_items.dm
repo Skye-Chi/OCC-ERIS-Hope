@@ -48,7 +48,7 @@ var/datum/uplink/uplink = new()
 	var/goods = get_goods(U, get_turf(user), user, extra_args)
 	if(!goods)
 		return
-	onispace_entropy(2, get_turf(user), TRUE)
+	bluespace_entropy(2, get_turf(user), TRUE)
 	purchase_log(U)
 	U.uses -= cost
 	U.used_TC += cost

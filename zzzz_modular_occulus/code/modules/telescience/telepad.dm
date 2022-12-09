@@ -4,7 +4,7 @@
 
 /obj/machinery/telesci_pad
 	name = "advanced telepad"
-	desc = "An advanced onispace telepad used for teleporting objects to and from a location."
+	desc = "An advanced bluespace telepad used for teleporting objects to and from a location."
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	icon_state = "pad"
 	anchored = TRUE
@@ -29,8 +29,8 @@
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		maxpow += C.rating * BS_CAPACITOR_POWER
 	var/eff = 0.5
-	for(var/obj/item/onispace_crystal/crystal in component_parts)
-		if(istype(crystal, /obj/item/onispace_crystal/artificial)) //Efficiency is 25% worse for each artifical onispace crystal, linearly.
+	for(var/obj/item/bluespace_crystal/crystal in component_parts)
+		if(istype(crystal, /obj/item/bluespace_crystal/artificial)) //Efficiency is 25% worse for each artifical bluespace crystal, linearly.
 			eff += 0.25
 	power_efficiency = eff
 	max_power = maxpow
@@ -137,7 +137,7 @@
 // Subtype of wormhole that doesn't process instability.
 
 /obj/effect/portal/wormhole/telepad
-	name = "onispace tunnel"
+	name = "bluespace tunnel"
 	desc = "A hole ripped straight through reality, kept open through massive expenditure of power."
 	layer = ABOVE_LIGHTING_LAYER
 	admin_announce_new = FALSE

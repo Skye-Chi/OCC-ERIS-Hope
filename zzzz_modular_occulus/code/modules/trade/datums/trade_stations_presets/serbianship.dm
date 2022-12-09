@@ -18,7 +18,7 @@
 		/obj/item/ammo_magazine/srifle,
 		/obj/item/organ_module/armor,
 		/obj/item/beartrap,
-		/obj/item/onispace_harpoon,
+		/obj/item/bluespace_harpoon,
 		/obj/item/emp_mine,
 		/obj/item/grenade/empgrenade,
 		/obj/item/grenade/frag,

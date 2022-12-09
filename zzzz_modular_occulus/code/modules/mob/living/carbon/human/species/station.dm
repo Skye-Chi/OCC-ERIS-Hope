@@ -117,8 +117,8 @@
 	name = "slime vascular system"
 	desc = "A complex, organic knot of pulsating jelly and crystalline particles."
 	icon = 'icons/mob/slimes.dmi'
-	icon_state = "onispace baby slime eat"
-	dead_icon = "onispace baby slime dead-nocore"
+	icon_state = "bluespace baby slime eat"
+	dead_icon = "bluespace baby slime dead-nocore"
 
 /obj/item/organ/internal/eyes/slime
 	name = "slime photoreceptors"

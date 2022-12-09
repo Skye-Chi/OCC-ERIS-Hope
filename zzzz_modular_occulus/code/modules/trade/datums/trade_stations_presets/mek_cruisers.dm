@@ -15,7 +15,7 @@
 		/obj/item/robot_parts/l_leg,
 		/obj/item/seeds,
 		/obj/item/slime_extract,
-		/obj/item/onispace_harpoon,
+		/obj/item/bluespace_harpoon,
 		/obj/item/cruciform_upgrade/cleansing_presence,
 		/obj/item/cruciform_upgrade/faiths_shield,
 		/obj/item/cruciform_upgrade/natures_blessing,

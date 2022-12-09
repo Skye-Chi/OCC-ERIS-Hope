@@ -180,24 +180,24 @@ datum/reagent/nitrate
 	M.stuttering = 50
 	return ..()
 
-/datum/reagent/onispace_dust
-	id = "onispace_dust"
+/datum/reagent/bluespace_dust
+	id = "bluespace_dust"
 	name = "Sparkling Crystaline Dust"
-	description = "Remnants of a onispace crystal, they seem to shimmer when looked at"
+	description = "Remnants of a bluespace crystal, they seem to shimmer when looked at"
 	color = "#4ECBF5"
 	reagent_state = SOLID
 
 //Still teleports people into space. Need to figure out why.. But otherwise good to go.
-/datum/reagent/liquid_onispace
-	id = "liquid_onispace"
-	name = "Liquid onispace"
+/datum/reagent/liquid_bluespace
+	id = "liquid_bluespace"
+	name = "Liquid bluespace"
 	description = "Appears to bend local spacetime around the container"
 	color = "#4ECBF5"
 	metabolism = 0
 	var/initial_time = 0
 	addiction_chance = 100
 
-/datum/reagent/liquid_onispace/on_mob_life(var/mob/living/M as mob)
+/datum/reagent/liquid_bluespace/on_mob_life(var/mob/living/M as mob)
 	if(!initial_time)
 		initial_time = world.time
 
@@ -207,7 +207,7 @@ datum/reagent/nitrate
 			to_chat(M, "<span class='notice'>You begin to feel transcendental.</span>")
 
 		if(M.z > 5 || M.z < 1) //no centcom teleport, also not dealing with other unknown sectors
-			to_chat(M, "<span class='warning'>You feel the onispace leave your body on this sector, nothing happens.</span>")
+			to_chat(M, "<span class='warning'>You feel the bluespace leave your body on this sector, nothing happens.</span>")
 			src = null
 			return
 
@@ -249,7 +249,7 @@ datum/reagent/nitrate
 			s.start()
 	..()
 
-/datum/reagent/liquid_onispace/on_mob_delete(var/mob/living/M)
+/datum/reagent/liquid_bluespace/on_mob_delete(var/mob/living/M)
 	if(istype(M))
 		M.vomit()
 //		M.add_chemical_effect(CE_TOXIN, 30)

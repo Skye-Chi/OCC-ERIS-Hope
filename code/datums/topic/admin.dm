@@ -1043,12 +1043,12 @@
 	to_chat(H, "\blue Your prayers have been answered!! You received the <b>best cookie</b>!")
 
 
-/datum/admin_topic/onispaceartillery
-	keyword = "onispaceArtillery"
+/datum/admin_topic/bluespaceartillery
+	keyword = "bluespaceArtillery"
 	require_perms = list(R_ADMIN|R_FUN)
 
-/datum/admin_topic/onispaceartillery/Run(list/input)
-	var/mob/living/M = locate(input["onispaceArtillery"])
+/datum/admin_topic/bluespaceartillery/Run(list/input)
+	var/mob/living/M = locate(input["bluespaceArtillery"])
 	if(!isliving(M))
 		to_chat(usr, "This can only be used on instances of type /mob/living")
 		return
@@ -1064,9 +1064,9 @@
 	spawn(50)
 		BSACooldown = FALSE
 
-	to_chat(M, "You've been hit by onispace artillery!")
-	log_admin("[key_name(M)] has been hit by onispace Artillery fired by [source.owner]")
-	message_admins("[key_name(M)] has been hit by onispace Artillery fired by [source.owner]")
+	to_chat(M, "You've been hit by bluespace artillery!")
+	log_admin("[key_name(M)] has been hit by bluespace Artillery fired by [source.owner]")
+	message_admins("[key_name(M)] has been hit by bluespace Artillery fired by [source.owner]")
 
 	var/obj/effect/stop/S
 	S = new /obj/effect/stop

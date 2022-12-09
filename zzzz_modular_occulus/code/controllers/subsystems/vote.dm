@@ -12,12 +12,12 @@
 	start_vote(/datum/poll/evac/transfer)
 
 /datum/poll/evac/transfer
-	name = "Engage onispace Drive"
+	name = "Engage bluespace Drive"
 	question = "Do you want to jump to another sector of space and restart the round?"
 	choice_types = list(/datum/vote_choice/transfer, /datum/vote_choice/notransfer)
 
 /datum/vote_choice/transfer
-	text = "Spool up the onispace Drive!"
+	text = "Spool up the bluespace Drive!"
 
 /datum/vote_choice/transfer/on_win()
 	evacuation_controller.call_evacuation(null, FALSE, TRUE, FALSE, TRUE)

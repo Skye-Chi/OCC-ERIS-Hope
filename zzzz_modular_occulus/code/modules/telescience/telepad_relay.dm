@@ -4,7 +4,7 @@
 
 /obj/machinery/telesci_relay
 	name = "telepad pathing relay"
-	desc = "A pylon with a complicated network of circuitry and a slot for a onispace crystal."
+	desc = "A pylon with a complicated network of circuitry and a slot for a bluespace crystal."
 	icon = 'zzzz_modular_occulus/icons/obj/telescience.dmi'
 	icon_state = "relay"
 	anchored = TRUE
@@ -16,7 +16,7 @@
 	var/crystal_degradation_chance = 10 // Percent
 
 	var/inUse = FALSE
-	var/obj/item/onispace_crystal/stored_crystal = null
+	var/obj/item/bluespace_crystal/stored_crystal = null
 
 /obj/machinery/telesci_relay/RefreshParts()
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
@@ -34,7 +34,7 @@
 		stored_crystal.forceMove(get_turf(src))
 		stored_crystal = null
 
-	if(istype(I, /obj/item/onispace_crystal))
+	if(istype(I, /obj/item/bluespace_crystal))
 		if(panel_open)
 			to_chat(user, "<span class='warning'>The opened wire panel is obstructing the crystal slot.</span>")
 			return FALSE
@@ -101,8 +101,8 @@
 	do_sparks(6, FALSE, get_turf(src))
 	qdel(stored_crystal)
 	stored_crystal = null
-	onispace_entropy(4, get_turf(src), TRUE)
-	new /obj/item/onispace_dust(get_turf(src))
+	bluespace_entropy(4, get_turf(src), TRUE)
+	new /obj/item/bluespace_dust(get_turf(src))
 
 /obj/machinery/telesci_relay/proc/pingCrystal()
 	. = checkCrystal()
@@ -113,7 +113,7 @@
 		damageCrystal(1)
 		if(!checkCrystal())
 			burntOut = TRUE
-	onispace_entropy(2, get_turf(src), TRUE)
+	bluespace_entropy(2, get_turf(src), TRUE)
 	cut_overlays()
 	if(panel_open)
 		overlays += "relay-panel"
@@ -143,17 +143,17 @@
 	var/turf/T = get_turf(src)
 	explosion(T, -1, 1, 2, 5) //Like a landmine but with less flash.
 	qdel(stored_crystal)
-	onispace_entropy(20, get_turf(src), TRUE)
+	bluespace_entropy(20, get_turf(src), TRUE)
 	qdel(src)
 
 /////////////////////////////
 // Occulus Additional Vars //
 /////////////////////////////
 
-/obj/item/onispace_crystal
+/obj/item/bluespace_crystal
 	var/max_integrity = 6
 	var/integrity = 6
 
-/obj/item/onispace_crystal/artificial
+/obj/item/bluespace_crystal/artificial
 	max_integrity = 4
 	integrity = 4

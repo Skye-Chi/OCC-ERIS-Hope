@@ -13,7 +13,7 @@
 		/obj/item/organ_module/active/simple/armsmg/tornado,
 		/obj/item/organ_module/active/simple/armsmg/typhoon,
 		/obj/item/augmentor,
-		/obj/item/onispace_harpoon,
+		/obj/item/bluespace_harpoon,
 		/obj/item/gun/energy/chameleon,
 		/obj/item/gun/energy/crossbow,
 		/obj/item/gun/energy/decloner,
@@ -29,7 +29,7 @@
 		/obj/item/gun_upgrade/mechanism/overdrive,
 		/obj/item/storage/backpack/holding,
 		/obj/item/storage/belt/holding,
-		/obj/item/tool/knife/dagger/onispace,
+		/obj/item/tool/knife/dagger/bluespace,
 		/obj/item/tool_upgrade/augment/randomizer
 
 	)

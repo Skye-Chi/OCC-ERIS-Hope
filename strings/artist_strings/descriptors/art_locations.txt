@@ -34,7 +34,7 @@ Security Department
 Primary tool storage
 Maintenance
 Deep maintenance
-onispace
+bluespace
 cyberspace
 mountains
 pool

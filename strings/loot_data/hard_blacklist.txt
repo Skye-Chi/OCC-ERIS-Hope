@@ -453,9 +453,9 @@
 /obj/item/weapon/rpd/borg
 /obj/item/weapon/rpd
 /obj/item/weapon/rsf
-/obj/item/weapon/onispace_harpoon/mounted/blitz
-/obj/item/weapon/onispace_harpoon/mounted
-/obj/item/weapon/onispace_harpoon
+/obj/item/weapon/bluespace_harpoon/mounted/blitz
+/obj/item/weapon/bluespace_harpoon/mounted
+/obj/item/weapon/bluespace_harpoon
 /obj/item/weapon/staff/broom
 /obj/item/weapon/staff/gentcane
 /obj/item/weapon/staff/stick
@@ -1233,8 +1233,8 @@
 /obj/item/pizzabox/mushroom
 /obj/item/pizzabox/meat
 /obj/item/pizzabox
-/obj/item/onispace_crystal/artificial
-/obj/item/onispace_crystal
+/obj/item/bluespace_crystal/artificial
+/obj/item/bluespace_crystal
 /obj/item/ammo_magazine/magnum/practice
 /obj/item/ammo_magazine/magnum/hv
 /obj/item/ammo_magazine/ihclrifle/hv
@@ -1345,7 +1345,7 @@
 /obj/item/seeds/tomatoseed
 /obj/item/seeds/killertomatoseed
 /obj/item/seeds/bluetomatoseed
-/obj/item/seeds/onispacetomatoseed
+/obj/item/seeds/bluespacetomatoseed
 /obj/item/seeds/cornseed
 /obj/item/seeds/poppyseed
 /obj/item/seeds/potatoseed
@@ -1554,7 +1554,7 @@
 /obj/item/slime_extract/black
 /obj/item/slime_extract/oil
 /obj/item/slime_extract/adamantine
-/obj/item/slime_extract/onispace
+/obj/item/slime_extract/bluespace
 /obj/item/slime_extract/pyrite
 /obj/item/slime_extract/cerulean
 /obj/item/slime_extract/sepia
@@ -1574,7 +1574,7 @@
 >>>>>>> 7d47de9... loot rework optimization. (#5709)
 =======
 >>>>>>> 171348a... fix: badly initialized atoms. (#5669)
-/obj/item/onispace_dust
+/obj/item/bluespace_dust
 /mob/living/carbon/human/bst
 /mob/living/carbon/human/appearance_test
 /mob/living/carbon/human/dummy/mannequin
@@ -2155,7 +2155,7 @@
 /obj/machinery/antigrav
 /obj/machinery/air_sensor
 /obj/machinery/autolathe_disk_cloner
-/obj/machinery/onispace_beacon
+/obj/machinery/bluespace_beacon
 /obj/machinery/biogenerator
 /obj/machinery/bioprinter/prosthetics
 /obj/machinery/bioprinter
@@ -2173,7 +2173,7 @@
 /obj/machinery/autolathe/rnd
 /obj/machinery/autolathe
 /obj/machinery/artillerycontrol
-/obj/machinery/onispacerelay
+/obj/machinery/bluespacerelay
 /obj/machinery/button/switch
 /obj/machinery/button/alternate
 /obj/machinery/button/toggle/switch

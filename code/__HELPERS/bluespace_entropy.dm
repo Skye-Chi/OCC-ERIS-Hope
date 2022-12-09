@@ -1,45 +1,45 @@
-GLOBAL_VAR_INIT(onispace_entropy, 0)
-GLOBAL_VAR_INIT(onispace_gift, 0)
-GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
+GLOBAL_VAR_INIT(bluespace_entropy, 0)
+GLOBAL_VAR_INIT(bluespace_gift, 0)
+GLOBAL_VAR_INIT(bluespace_distotion_cooldown, 10 MINUTES)
 
 /area
-	var/local_onispace_entropy = 0
+	var/local_bluespace_entropy = 0
 
-/proc/go_to_onispace(turf/T, entropy=1, minor_distortion=FALSE, ateleatom, adestination, aprecision=0, afteleport=1, aeffectin=null, aeffectout=null, asoundin=null, asoundout=null)
-	onispace_entropy(entropy, T, minor_distortion)
+/proc/go_to_bluespace(turf/T, entropy=1, minor_distortion=FALSE, ateleatom, adestination, aprecision=0, afteleport=1, aeffectin=null, aeffectout=null, asoundin=null, asoundout=null)
+	bluespace_entropy(entropy, T, minor_distortion)
 	do_teleport(ateleatom, adestination, aprecision, afteleport, aeffectin, aeffectout, asoundin, asoundout)
 
-/proc/onispace_entropy(max_value=1, turf/T, minor_distortion=FALSE)
+/proc/bluespace_entropy(max_value=1, turf/T, minor_distortion=FALSE)
 	var/entropy_value = rand(0, max_value)
 	var/area/A = get_area(T)
 	if(minor_distortion && A)
-		A.local_onispace_entropy += entropy_value
+		A.local_bluespace_entropy += entropy_value
 		var/area_entropy_cap = rand(100, 200)
-		if(A.local_onispace_entropy > area_entropy_cap && world.time > GLOB.onispace_distotion_cooldown)
-			GLOB.onispace_distotion_cooldown = world.time + 5 MINUTES
-			A.local_onispace_entropy -= rand(100, 150)
-			onispace_distorsion(T, minor_distortion)
+		if(A.local_bluespace_entropy > area_entropy_cap && world.time > GLOB.bluespace_distotion_cooldown)
+			GLOB.bluespace_distotion_cooldown = world.time + 5 MINUTES
+			A.local_bluespace_entropy -= rand(100, 150)
+			bluespace_distorsion(T, minor_distortion)
 	else
-		GLOB.onispace_entropy += entropy_value
+		GLOB.bluespace_entropy += entropy_value
 		var/entropy_cap = rand(150, 300)
-		if(GLOB.onispace_entropy >= entropy_cap && world.time > GLOB.onispace_distotion_cooldown)
-			GLOB.onispace_distotion_cooldown = world.time + 10 MINUTES
-			onispace_distorsion(T, minor_distortion)
-			GLOB.onispace_entropy -= rand(150, 225)
+		if(GLOB.bluespace_entropy >= entropy_cap && world.time > GLOB.bluespace_distotion_cooldown)
+			GLOB.bluespace_distotion_cooldown = world.time + 10 MINUTES
+			bluespace_distorsion(T, minor_distortion)
+			GLOB.bluespace_entropy -= rand(150, 225)
 
-/proc/onispace_distorsion(turf/T, minor_distortion=FALSE)
-	var/onispace_event = rand(1, 100)
-	switch(onispace_event)
+/proc/bluespace_distorsion(turf/T, minor_distortion=FALSE)
+	var/bluespace_event = rand(1, 100)
+	switch(bluespace_event)
 		if(1 to 30)
 			trash_buble(T, minor_distortion)
 		if(30 to 55)
-			onispace_roaches(T, minor_distortion)
+			bluespace_roaches(T, minor_distortion)
 		if(55 to 75)
-			onispace_stranger(T, minor_distortion)
+			bluespace_stranger(T, minor_distortion)
 		if(75 to 90)
-			onispace_cristals_event(T, minor_distortion)
+			bluespace_cristals_event(T, minor_distortion)
 		if(90 to 100)
-			onispace_gift(T, minor_distortion)
+			bluespace_gift(T, minor_distortion)
 
 /proc/get_random_secure_turf_in_range(atom/origin, outer_range, inner_range)
 	origin = get_turf(origin)
@@ -76,7 +76,7 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 	if(turfs.len)
 		return pick(turfs)
 
-/proc/onispace_cristals_event(turf/T, minor_distortion)
+/proc/bluespace_cristals_event(turf/T, minor_distortion)
 	var/list/areas = list()
 	var/area/A = get_area(T)
 	var/distortion_amount = 1
@@ -99,7 +99,7 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 				new /obj/structure/bs_crystal_structure(Ttarget)
 				do_sparks(3, 0, Ttarget)
 
-/proc/onispace_gift(turf/T, minor_distortion)
+/proc/bluespace_gift(turf/T, minor_distortion)
 	var/second_gift = rand(2,10)
 	var/area/A = get_area(T)
 	if(A && !minor_distortion)
@@ -112,10 +112,10 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 	T = get_random_secure_turf_in_range(T, 4)
 	if(!T)
 		return
-	if(GLOB.onispace_gift <= 0 && !minor_distortion)
+	if(GLOB.bluespace_gift <= 0 && !minor_distortion)
 		new /obj/item/oddity/broken_necklace(T)
 		do_sparks(3, 0, T)
-		log_and_message_admins("onispace gif spawned: [jumplink(T)]") //unique item
+		log_and_message_admins("bluespace gif spawned: [jumplink(T)]") //unique item
 	else
 		second_gift *= 10
 	if(prob(second_gift))
@@ -123,7 +123,7 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 		new O(T)
 		do_sparks(3, 0, T)
 
-/proc/onispace_stranger(turf/T, minor_distortion)
+/proc/bluespace_stranger(turf/T, minor_distortion)
 	var/area/A = get_area(T)
 	if(A)
 		if(!minor_distortion && (A in ship_areas))
@@ -139,7 +139,7 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 		S.empy_cell = TRUE
 	log_and_message_admins("Stranger spawned: [jumplink(T)]")
 
-/proc/onispace_roaches(turf/T, minor_distortion)
+/proc/bluespace_roaches(turf/T, minor_distortion)
 	var/list/areas = list()
 	var/area/A = get_area(T)
 	var/distortion_amount = 1
@@ -158,7 +158,7 @@ GLOBAL_VAR_INIT(onispace_distotion_cooldown, 10 MINUTES)
 				Ttarget = get_random_secure_turf_in_range(Ttarget2, 4)
 		for(var/i=1, i<=amount, i++)
 			if(Ttarget)
-				new /mob/living/carbon/superior_animal/roach/onispace(Ttarget)
+				new /mob/living/carbon/superior_animal/roach/bluespace(Ttarget)
 
 /proc/trash_buble(turf/T, minor_distortion)
 	var/list/areas = list()
