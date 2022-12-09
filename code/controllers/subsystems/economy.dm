@@ -102,7 +102,7 @@ SUBSYSTEM_DEF(economy)
 		var/datum/money_account/source //Source account for internal funding
 
 		var/reason = "Payroll Funding"
-		var/terminal = "ICSS Hope payroll system"
+		var/terminal = "ICSS Hope Payroll system"
 
 		//Alright, how much money are we requesting
 		var/total_request = department.pending_wage_total + department.pending_budget_total
@@ -193,7 +193,7 @@ SUBSYSTEM_DEF(economy)
 
 				payroll_mail_account_holder(R, sender, amount)
 		department.pending_wages = list() //All pending wages paid off
-	command_announcement.Announce("Hourly crew wages have been paid, please check your email for details. In total the crew of [station_name()] have earned [total_paid] credits.\n Please contact your Department Heads in case of errors or missing payments.", "Dispensation") //Occulus Edit: Fixed a bad string
+	command_announcement.Announce("Hourly wages have been semt, please check your email for details. In total the crew of [station_name()] have earned [total_paid] credits.\n Please contact your Department Heads in case of errors or missing payments.", "Dispensation") //Occulus Edit: Fixed a bad string
 
 
 //Sent to a head of staff when their department account fails to pay out wages

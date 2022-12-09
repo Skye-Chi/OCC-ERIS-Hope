@@ -23,23 +23,23 @@ var/global/datum/universal_state/universe = new
 var/global/list/global_map
 
 // Noises made when hit while typing.
-var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF")
+var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-AAAGHSSHOLE")
 
 
 var/runtime_diary
 var/diary              
 var/world_qdel_log
 var/href_logfile       
-var/station_name        = "ICSS Hope" //Occulus edits
-var/station_short       = "Northern Light"
-var/const/dock_name     = "N.A.S. Crescent"
-var/const/boss_name     = "NL Command Board"
-var/const/boss_short    = "The Board"
-var/const/company_name  = "Northern Light"
-var/const/company_short = "Northern Light" //Occulus Edits end here
-var/game_version        = "Discordia"
+var/station_name        = "ICSS Hope" //Hope edits
+var/station_short       = "Hope"
+var/const/dock_name     = "I-T-D Andromeda"
+var/const/boss_name     = "Coalition of the Free Syndicate of Lankara"
+var/const/boss_short    = "The Syndicate"
+var/const/company_name  = "Coalition of Lankara"
+var/const/company_short = "Coalition" //Occulus Edits end here
+var/game_version        = "Harmony"
 var/changelog_hash      = ""
-var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 400)
+var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 650)
 
 var/round_progressing = 1
 var/master_storyteller       = "shitgenerator"
@@ -118,7 +118,7 @@ var/static/list/scarySounds = list(
 )
 
 // Bomb cap!
-var/max_explosion_range = 14
+var/max_explosion_range = 50
 
 // Announcer intercom, because too much stuff creates an intercom for one message then hard del()s it.
 var/global/obj/item/device/radio/intercom/global_announcer = new(null)

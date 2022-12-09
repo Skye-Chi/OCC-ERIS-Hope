@@ -179,7 +179,7 @@
 	title = "Cat Exhibition Vessel \"ICSS Hope\" Feline Herder"
 
 /datum/job_flavor/assistant/breeder
-	title = "Cat Exhibition Vessel \"Northern Lgiht\" Breeder"
+	title = "Cat Exhibition Vessel \"ICSS Hope\" Breeder"
 
 /datum/job_flavor/assistant/mixologist
 	title = "Corporate Entertain Vehicle \"ICSS Hope\" Mixologist"
