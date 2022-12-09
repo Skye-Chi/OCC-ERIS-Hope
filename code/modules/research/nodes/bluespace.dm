@@ -1,7 +1,7 @@
 /datum/technology/basic_bluespace
 	name = "Basic 'Blue-space'"
 	desc = "Basic blue-space probing."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.2
 	y = 0.2
@@ -16,7 +16,7 @@
 /datum/technology/radio_transmission
 	name = "Blue-space Transmission"
 	desc = "Blue-space broadcasting and receiving basics."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.2
 	y = 0.4
@@ -31,7 +31,7 @@
 /datum/technology/telecommunications
 	name = "Roots\' Telecommunications"
 	desc = "Parts for telecommunications. Hyperwave filtering method. Subspace ansible. Subspace transmition and analyzing method. Advanced bluespace broadcasting and receiving. Transmition system monitoring."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.2
 	y = 0.6
@@ -59,7 +59,7 @@
 /datum/technology/bluespace_telecommunications
 	name = "Advanced Telecommunications"
 	desc = "Advanced telecommunications machinery. Decryption method. Relays\' system. Complex sorting of machinery. Data storing system. Network relay."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.4
 	y = 0.6
@@ -81,7 +81,7 @@
 /datum/technology/transmission_encryption
 	name = "Transmission Encryption"
 	desc = "Transmission Encryption"
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.2
 	y = 0.8
@@ -96,7 +96,7 @@
 /datum/technology/spatial_scan
 	name = "Spatial Analyzing"
 	desc = "Basics of spatial analyze, generally using for location of beacons and anomaly analyzing."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 	icon = "pda"
 
 
@@ -113,7 +113,7 @@
 /datum/technology/bluespace_shield
 	name = "bluespace Shields"
 	desc = "Improved light-shields with using of bluespace technologies."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.4
 	y = 0.4
@@ -128,7 +128,7 @@
 /datum/technology/teleportation
 	name = "Teleportation"
 	desc = "Creating a worm hole through a bluespace, safely transporting objects through it."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.6
 	y = 0.6
@@ -144,7 +144,7 @@
 /datum/technology/adv_spatial_scan
 	name = "Advanced Spatial Analyzing"
 	desc = "Advanced Spatial Analyzing"
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 	icon = "telescience"
 
 
@@ -167,7 +167,7 @@
 /datum/technology/bluespace_tools
 	name = "Advanced bluespace Tech"
 	desc = "In-bluespace storing method, allowing store objects/reagents in bluespace. And The method of separate storage of reagents."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.8
 	y = 0.8
@@ -187,7 +187,7 @@
 /datum/technology/bluespace_extended
 	name = "Extended bluespace Tech"
 	desc = "Application of the bluespace storing technology to a wider variety of containers."
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.8
 	y = 0.9
@@ -207,7 +207,7 @@
 /datum/technology/bluespace_rped
 	name = "bluespace RPED"
 	desc = "bluespace RPED"
-	tech_type = RESEARCH_bluespace
+	tech_type = RESEARCH_BLUESPACE
 
 	x = 0.8
 	y = 0.4
