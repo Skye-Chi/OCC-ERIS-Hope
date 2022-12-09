@@ -21,7 +21,7 @@
 	var/power = 5
 
 	// Based on the power used
-	var/teleport_cooldown = 0 // every index requires a onispace crystal
+	var/teleport_cooldown = 0 // every index requires a bluespace crystal
 	var/list/power_options = list(5, 10, 20, 25, 30, 40, 50, 80, 100)
 	var/teleporting = 0
 	var/starting_crystals = 0	//Edit this on the map, seriously.
@@ -38,16 +38,16 @@
 
 /obj/machinery/computer/telescience/examine(mob/user)
 	. = ..()
-	to_chat(user, "There are [crystals.len ? crystals.len : "no"] onispace crystal\s in the crystal slots.")
+	to_chat(user, "There are [crystals.len ? crystals.len : "no"] bluespace crystal\s in the crystal slots.")
 
 /obj/machinery/computer/telescience/Initialize()
 	. = ..()
 	recalibrate()
 	for(var/i = 1; i <= starting_crystals; i++)
-		crystals += new /obj/item/onispace_crystal/artificial(null) // starting crystals
+		crystals += new /obj/item/bluespace_crystal/artificial(null) // starting crystals
 
 /obj/machinery/computer/telescience/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/onispace_crystal))
+	if(istype(W, /obj/item/bluespace_crystal))
 		if(crystals.len >= max_crystals)
 			to_chat(user, SPAN_WARNING("There are not enough crystal slots."))
 			return
@@ -173,7 +173,7 @@
 			playsound(telepad.loc, 'sound/weapons/flash.ogg', 25, 1)
 			// Wait depending on the time the projectile took to get there
 			teleporting = 1
-			temp_msg = "Powering up onispace crystals.<BR>Please wait."
+			temp_msg = "Powering up bluespace crystals.<BR>Please wait."
 
 
 		spawn(round(proj_data.time) SECONDS) // in seconds
@@ -243,7 +243,7 @@
 							log_msg = dd_limittext(log_msg, length(log_msg) - 2)
 							log_msg += ")"
 					log_msg += ", "
-				go_to_onispace(get_turf(src),telepad.entropy_value, FALSE, ROI, dest)
+				go_to_bluespace(get_turf(src),telepad.entropy_value, FALSE, ROI, dest)
 
 			if (dd_hassuffix(log_msg, ", "))
 				log_msg = dd_limittext(log_msg, length(log_msg) - 2)
@@ -341,7 +341,7 @@
 
 	if(href_list["eject"])
 		eject()
-		temp_msg = "NOTICE:<BR>onispace crystals ejected."
+		temp_msg = "NOTICE:<BR>bluespace crystals ejected."
 
 	updateDialog()
 

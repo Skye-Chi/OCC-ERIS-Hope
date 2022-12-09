@@ -324,7 +324,7 @@ End Occulus Edit */
 	name = "Broken necklace"
 	desc = "A broken necklace that has a blue crystal as a trinket."
 	icon_state = "broken_necklace"
-	origin_tech = list(TECH_onispace = 9)
+	origin_tech = list(TECH_bluespace = 9)
 	oddity_stats = list(
 		STAT_COG = 9,
 		STAT_VIG = 9,
@@ -339,15 +339,15 @@ End Occulus Edit */
 
 /obj/item/oddity/broken_necklace/New()
 	..()
-	GLOB.onispace_gift += 1
-	GLOB.onispace_entropy -= rand(30, 50)
+	GLOB.bluespace_gift += 1
+	GLOB.bluespace_entropy -= rand(30, 50)
 
 /obj/item/oddity/broken_necklace/Destroy()
 	var/turf/T = get_turf(src)
 	if(T)
-		onispace_entropy(80,T)
-		new /obj/item/onispace_dust(T)
-	GLOB.onispace_gift -= 1
+		bluespace_entropy(80,T)
+		new /obj/item/bluespace_dust(T)
+	GLOB.bluespace_gift -= 1
 	. = ..()
 
 /obj/item/oddity/broken_necklace/attack_self(mob/user)
@@ -359,10 +359,10 @@ End Occulus Edit */
 	sparks.set_up(3, 0, get_turf(user))
 	sparks.start()
 	var/turf/T = get_random_secure_turf_in_range(user, blink_range, 2)
-	go_to_onispace(get_turf(user), entropy_value, TRUE, user, T)
+	go_to_bluespace(get_turf(user), entropy_value, TRUE, user, T)
 	for(var/obj/item/grab/G in user.contents)
 		if(G.affecting)
-			go_to_onispace(get_turf(user), entropy_value, FALSE, G.affecting, locate(T.x+rand(-1,1),T.y+rand(-1,1),T.z))
+			go_to_bluespace(get_turf(user), entropy_value, FALSE, G.affecting, locate(T.x+rand(-1,1),T.y+rand(-1,1),T.z))
 	if(prob(1))
 		qdel(src)
 
@@ -375,7 +375,7 @@ End Occulus Edit */
 		sparks.start()
 		if(!hit_atom.anchored)
 			var/turf/NT = get_random_turf_in_range(hit_atom, blink_range, 2)
-			go_to_onispace(T, entropy_value, TRUE, hit_atom, NT)
+			go_to_bluespace(T, entropy_value, TRUE, hit_atom, NT)
 		if(prob(1))
 			qdel(src)
 

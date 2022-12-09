@@ -4,7 +4,7 @@
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "posibrain"
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 4, TECH_onispace = 2, TECH_DATA = 4)
+	origin_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 4, TECH_bluespace = 2, TECH_DATA = 4)
 	matter = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 5, MATERIAL_SILVER = 5, MATERIAL_GOLD = 5)
 	var/searching = 0
 	var/askDelay = 10 * 60 * 1

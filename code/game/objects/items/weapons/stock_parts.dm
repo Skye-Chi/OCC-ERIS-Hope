@@ -299,8 +299,8 @@
 // debug stock parts - rating 100, intended for debugging
 
 /obj/item/stock_parts/capacitor/debug
-	name = "onispace capacitor"
-	desc = "An ultra-advanced battery able to store immense amounts of energy in a localized onispace pocket. Used in construction of certain devices."
+	name = "bluespace capacitor"
+	desc = "An ultra-advanced battery able to store immense amounts of energy in a localized bluespace pocket. Used in construction of certain devices."
 	icon_state = "debug_capacitor"
 	origin_tech = list(TECH_POWER = 6, TECH_MATERIAL = 6)
 	rating = 100 // rating doesn't really matter past a certain point - this makes autolathes print stuff at 1/5th the normal cost (item that costs 5 steel now costs 1 steel)
@@ -308,8 +308,8 @@
 	bad_type = /obj/item/stock_parts/capacitor/debug
 
 /obj/item/stock_parts/scanning_module/debug
-	name = "onispace scanning module"
-	desc = "An ultra-advanced electronic that can rapidly scan objects, as well as their mirror images in onispace in order to easily understand every detail. Used in construction of certain devices."
+	name = "bluespace scanning module"
+	desc = "An ultra-advanced electronic that can rapidly scan objects, as well as their mirror images in bluespace in order to easily understand every detail. Used in construction of certain devices."
 	icon_state = "debug_scan_module"
 	origin_tech = list(TECH_MAGNET = 6)
 	rating = 100
@@ -317,7 +317,7 @@
 	bad_type = /obj/item/stock_parts/scanning_module/debug
 
 /obj/item/stock_parts/manipulator/debug
-	name = "onispace yocto-manipulator"
+	name = "bluespace yocto-manipulator"
 	desc = "An ultra-advanced device that can manipulate an objects molecular structure. Used in construction of certain devices."
 	icon_state = "debug_mani"
 	origin_tech = list(TECH_MATERIAL = 6, TECH_DATA = 3)
@@ -326,7 +326,7 @@
 	bad_type = /obj/item/stock_parts/manipulator/debug
 
 /obj/item/stock_parts/micro_laser/debug
-	name = "onispace yocto-laser"
+	name = "bluespace yocto-laser"
 	icon_state = "debug_micro_laser"
 	desc = "An ultra-advanced device that emits a laser that can emit any kind of laser on the spectrum, and several lasers off the spectrum. Used in construction of certain devices."
 	origin_tech = list(TECH_MAGNET = 6)
@@ -335,7 +335,7 @@
 	bad_type = /obj/item/stock_parts/micro_laser/debug
 
 /obj/item/stock_parts/matter_bin/debug
-	name = "onispace matter bin"
+	name = "bluespace matter bin"
 	desc = "An ultra-advanced container that opens into a localized pocket dimension meant for holding compressed matter. Used in construction of certain devices."
 	icon_state = "debug_matter_bin"
 	origin_tech = list(TECH_MATERIAL = 6)
@@ -352,7 +352,7 @@
 	name = "subspace ansible"
 	icon_state = "subspace_ansible"
 	desc = "A compact module capable of sensing extradimensional activity."
-	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 5 ,TECH_MATERIAL = 4, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 5 ,TECH_MATERIAL = 4, TECH_bluespace = 2)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 
 /obj/item/stock_parts/subspace/filter
@@ -366,33 +366,33 @@
 	name = "subspace amplifier"
 	icon_state = "subspace_amplifier"
 	desc = "A compact micro-machine capable of amplifying weak subspace transmissions."
-	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_bluespace = 2)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 
 /obj/item/stock_parts/subspace/treatment
 	name = "subspace treatment disk"
 	icon_state = "treatment_disk"
 	desc = "A compact micro-machine capable of stretching out hyper-compressed radio waves."
-	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 2, TECH_MATERIAL = 5, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 2, TECH_MATERIAL = 5, TECH_bluespace = 2)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 
 /obj/item/stock_parts/subspace/analyzer
 	name = "subspace wavelength analyzer"
 	icon_state = "wavelength_analyzer"
 	desc = "A sophisticated analyzer capable of analyzing cryptic subspace wavelengths."
-	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_bluespace = 2)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 
 /obj/item/stock_parts/subspace/crystal
 	name = "ansible crystal"
 	icon_state = "ansible_crystal"
 	desc = "A crystal made from pure glass used to transmit laser databursts to subspace."
-	origin_tech = list(TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_onispace = 2)
+	origin_tech = list(TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_bluespace = 2)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 
 /obj/item/stock_parts/subspace/transmitter
 	name = "subspace transmitter"
 	icon_state = "subspace_transmitter"
 	desc = "A large piece of equipment used to open a window into the subspace dimension."
-	origin_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 5, TECH_onispace = 3)
+	origin_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 5, TECH_bluespace = 3)
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)

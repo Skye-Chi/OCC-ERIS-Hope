@@ -2,7 +2,7 @@
 	name = T_BOARD("excelsior shield wall generator")
 	board_type = "machine"
 	build_path = /obj/machinery/shieldwallgen/excelsior
-	origin_tech = list(TECH_onispace = 3, TECH_MAGNET = 3, TECH_COVERT = 2)
+	origin_tech = list(TECH_bluespace = 3, TECH_MAGNET = 3, TECH_COVERT = 2)
 	req_components = list(
 		/obj/item/stock_parts/subspace/transmitter = 1,
 		/obj/item/stock_parts/subspace/crystal = 1,
@@ -62,7 +62,7 @@
 	name = T_BOARD("excelsior teleporter")
 	build_path = /obj/machinery/complant_teleporter
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 3, TECH_onispace = 3, TECH_COVERT = 2)
+	origin_tech = list(TECH_DATA = 3, TECH_bluespace = 3, TECH_COVERT = 2)
 	req_components = list(
 		/obj/item/stock_parts/manipulator = 2,
 		/obj/item/cell/large = 1,

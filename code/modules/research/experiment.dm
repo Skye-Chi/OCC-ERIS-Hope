@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 		TECH_ENGINEERING = 250,
 		TECH_PHORON = 500,
 		TECH_POWER = 300,
-		TECH_onispace = 1000,
+		TECH_bluespace = 1000,
 		TECH_BIO = 300,
 		TECH_COMBAT = 500,
 		TECH_MAGNET = 350,
@@ -52,7 +52,7 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 		/obj/item/slime_extract/grey = 200,
 		/obj/item/slime_extract/gold = 4000,
 		/obj/item/slime_extract/adamantine = 6000,
-		/obj/item/slime_extract/onispace = 10000,
+		/obj/item/slime_extract/bluespace = 10000,
 		/obj/item/slime_extract/rainbow = 20000
 	) //Occulus Edit End
 

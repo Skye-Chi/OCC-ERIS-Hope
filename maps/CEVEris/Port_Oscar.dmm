@@ -47344,7 +47344,7 @@
 	},
 /area/eris/command/tcommsat/chamber)
 "tXi" = (
-/obj/machinery/onispacerelay,
+/obj/machinery/bluespacerelay,
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
 	nitrogen = 180;

@@ -7,7 +7,7 @@
 	w_class = ITEM_SIZE_TINY
 	max_amount = 50
 	flags = NOBLUDGEON
-	origin_tech = list(TECH_MATERIAL = 6, TECH_onispace = 4)
+	origin_tech = list(TECH_MATERIAL = 6, TECH_bluespace = 4)
 	price_tag = 50
 	spawn_blacklisted = TRUE
 

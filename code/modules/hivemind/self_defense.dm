@@ -171,7 +171,7 @@
 			master.visible_message("[master] vanished in the air!")
 			playsound(master, 'sound/effects/cascade.ogg', 70, 1)
 			master.forceMove(new_place)
-			onispace_entropy(2, new_place, TRUE)
+			bluespace_entropy(2, new_place, TRUE)
 			master.visible_message("[master] appeared from an air!")
 			playsound(master, 'sound/effects/cascade.ogg', 50, 1)
 			message_admins("Hivemind node [master] emergency run at \the [jumplink(new_place)]") */	//SYZYGY EMERGENCY DISABLE

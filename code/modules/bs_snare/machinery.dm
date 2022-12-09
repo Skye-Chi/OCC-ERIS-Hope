@@ -1,5 +1,5 @@
 /obj/machinery/bssilk_hub
-	name = "onispace snare hub"
+	name = "bluespace snare hub"
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "tele0"
 	w_class = ITEM_SIZE_GARGANTUAN
@@ -68,20 +68,20 @@
 	return mobs
 
 /obj/machinery/bssilk_hub/proc/teleport_back(mob/target)
-	to_chat(target, SPAN_WARNING("You feel like something pull you in onispace."))
+	to_chat(target, SPAN_WARNING("You feel like something pull you in bluespace."))
 	//Creat animation and move  mob into it and mob will not walking. Camera will follow animation.
 	var/obj/effect/temporary/A = new(get_turf(target), 24.5, animation_icon, back_animation)
 	target.dir = 2
 	target.forceMove(A)
-	onispace_entropy(3, get_turf(A))
+	bluespace_entropy(3, get_turf(A))
 	sleep(23)
 	target.forceMove(src)
-	onispace_entropy(3, get_turf(src))
+	bluespace_entropy(3, get_turf(src))
 	target.dir = 2
 	new /obj/effect/temporary(get_turf(src), 26.5, animation_icon, onhub_animation)
 	sleep(24)
 	target.forceMove(loc)
-	onispace_entropy(3, get_turf(loc))
+	bluespace_entropy(3, get_turf(loc))
 
 /obj/machinery/bssilk_hub/Destroy()
 	. = ..()
@@ -89,7 +89,7 @@
 	connected_console = null
 
 /obj/machinery/computer/bssilk_control
-	name = "onispace snare control"
+	name = "bluespace snare control"
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "computer"
 	circuit = /obj/item/electronics/circuitboard/bssilk_cons

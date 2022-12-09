@@ -576,14 +576,14 @@
 	var/atom/AM = get_object()
 	AM.investigate_log("threw [A] with [src] at X: [x_abs], y: [y_abs].", INVESTIGATE_CIRCUIT)
 
-/obj/item/integrated_circuit/manipulation/onispace_rift
-	name = "onispace rift generator"
-	desc = "This powerful circuit can open rifts to another realspace location through onispace."
+/obj/item/integrated_circuit/manipulation/bluespace_rift
+	name = "bluespace rift generator"
+	desc = "This powerful circuit can open rifts to another realspace location through bluespace."
 	extended_desc = "If a valid teleporter console is supplied as input then its selected teleporter beacon will be used as destination point, \
 					and if not an undefined destination point is selected. \
 					Rift direction is a cardinal value determening in which direction the rift will be opened, relative the local north. \
 					A direction value of 0 will open the rift on top of the assembly, and any other non-cardinal values will open the rift in the assembly's current facing."
-	icon_state = "onispace"
+	icon_state = "bluespace"
 	complexity = 100
 	size = 3
 	cooldown_per_use = 10 SECONDS
@@ -594,11 +594,11 @@
 	spawn_flags = IC_SPAWN_RESEARCH
 	action_flags = IC_ACTION_LONG_RANGE
 
-	origin_tech = list(TECH_MAGNET = 1, TECH_onispace = 3)
+	origin_tech = list(TECH_MAGNET = 1, TECH_bluespace = 3)
 	matter = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 2000, MATERIAL_GOLD = 200)
 	var/entropy_value = 1
 
-/obj/item/integrated_circuit/manipulation/onispace_rift/do_work()
+/obj/item/integrated_circuit/manipulation/bluespace_rift/do_work()
 
 	var/obj/machinery/computer/teleporter/tporter = get_pin_data_as_type(IC_INPUT, 1, /obj/machinery/computer/teleporter)
 	var/step_dir = get_pin_data(IC_INPUT, 2)

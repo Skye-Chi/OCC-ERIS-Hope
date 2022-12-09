@@ -154,14 +154,14 @@
 
 	unlocks_designs = list()//"fusion_core_control", "fusion_fuel_compressor", "fusion_fuel_control", "gyrotron_control", "fusion_core", "fusion_injector", "gyrotron")
 
-/datum/technology/onispace_power
+/datum/technology/bluespace_power
 	name = "Fusion Based Power"
-	desc = "Power cells based on onispace and fusion power."
+	desc = "Power cells based on bluespace and fusion power."
 	tech_type = RESEARCH_POWERSTORAGE
 
 	x = 0.8
 	y = 0.5
-	icon = "onispacecell"
+	icon = "bluespacecell"
 
 	required_technologies = list(
 									/datum/technology/super_power,

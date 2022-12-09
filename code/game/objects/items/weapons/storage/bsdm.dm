@@ -6,7 +6,7 @@
 	item_state = "bsdm"
 	max_storage_space = DEFAULT_BULKY_STORAGE
 	max_w_class = ITEM_SIZE_BULKY
-	origin_tech = list(TECH_onispace = 3, TECH_COVERT = 3)
+	origin_tech = list(TECH_bluespace = 3, TECH_COVERT = 3)
 	matter = list(MATERIAL_STEEL = 6)
 	spawn_blacklisted = TRUE
 	var/del_on_send = TRUE

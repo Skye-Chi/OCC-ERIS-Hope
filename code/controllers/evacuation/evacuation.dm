@@ -161,14 +161,14 @@ var/datum/evacuation_controller/evacuation_controller
 			finish_preparing_evac()
 	else if(state == EVAC_LAUNCHING)
 		if(!bsd_drive_active && !emergency_evacuation && world.time >= evac_launch_time - 8 SECONDS)	// OCCULUS EDIT- OUR NEW JUMP SOUNDS
-			sound_to(world, sound('zzzz_modular_occulus/sound/effects/onispace_drive.ogg', repeat = 0, wait = 0, volume = 85, channel = GLOB.admin_sound_channel))// OCCULUS EDIT
-			sound_to(world, sound('zzzz_modular_occulus/sound/effects/onispace_drive_traveling.ogg', repeat = 1, wait = 1, volume = 85, channel = GLOB.admin_sound_channel))// OCCULUS EDIT
+			sound_to(world, sound('zzzz_modular_occulus/sound/effects/bluespace_drive.ogg', repeat = 0, wait = 0, volume = 85, channel = GLOB.admin_sound_channel))// OCCULUS EDIT
+			sound_to(world, sound('zzzz_modular_occulus/sound/effects/bluespace_drive_traveling.ogg', repeat = 1, wait = 1, volume = 85, channel = GLOB.admin_sound_channel))// OCCULUS EDIT
 			bsd_drive_active = TRUE	// OCCULUS EDIT
 		if(world.time >= evac_launch_time)
 			launch_evacuation()
 	else if(state == EVAC_IN_TRANSIT)
 		if(!bsd_drive_end && !emergency_evacuation && world.time >= evac_arrival_time - 6 SECONDS)	// OCCULUS EDIT- OUR NEW JUMP SOUNDS
-			sound_to(world, sound('zzzz_modular_occulus/sound/effects/onispace_drive_finish.ogg', repeat = 0, wait = 0, volume = 85, channel = GLOB.admin_sound_channel))	// OCCULUS EDIT- OUR NEW JUMP SOUNDS
+			sound_to(world, sound('zzzz_modular_occulus/sound/effects/bluespace_drive_finish.ogg', repeat = 0, wait = 0, volume = 85, channel = GLOB.admin_sound_channel))	// OCCULUS EDIT- OUR NEW JUMP SOUNDS
 			bsd_drive_end = TRUE	// OCCULUS EDIT- OUR NEW JUMP SOUNDS
 		if(world.time >= evac_arrival_time)
 			finish_evacuation()

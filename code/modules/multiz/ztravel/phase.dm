@@ -1,6 +1,6 @@
 /*
 	Instantly skip to the destination without any waiting or animation.
-	This is basically an OOC movement used by ghosts, AI eye, and onispace technicians.
+	This is basically an OOC movement used by ghosts, AI eye, and bluespace technicians.
 */
 /datum/vertical_travel_method/phase
 	slip_chance = 0

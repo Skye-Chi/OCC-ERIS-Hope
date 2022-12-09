@@ -7,7 +7,7 @@ GLOBAL_DATUM(last_shelter, /obj/item/device/last_shelter)
 	icon_state = "last_shelter"
 	item_state = "last_shelter"
 	price_tag = 20000
-	origin_tech = list(TECH_MAGNET = 5, TECH_onispace = 9, TECH_BIO = 3)
+	origin_tech = list(TECH_MAGNET = 5, TECH_bluespace = 9, TECH_BIO = 3)
 	spawn_frequency = 0
 	spawn_blacklisted = TRUE
 	var/cooldown = 15 MINUTES

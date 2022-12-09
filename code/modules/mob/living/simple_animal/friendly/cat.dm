@@ -273,14 +273,14 @@ var/cat_number = 0
 
 /mob/living/simple_animal/cat/runtime
 	name = "Dusty"
-	desc = "A onispace denizen that purrs its way into our dimension when the very fabric of reality is torn apart."
+	desc = "A bluespace denizen that purrs its way into our dimension when the very fabric of reality is torn apart."
 	icon_state = "runtimecat"
 	item_state = "runtimecat"
 	density = 0
 	anchored = TRUE  // So that people cannot pull Dusty
 	mob_size = MOB_HUGE // So that people cannot put Dusty in lockers to move it
 
-	status_flags = GODMODE // onispace cat
+	status_flags = GODMODE // bluespace cat
 	min_oxy = 0
 	minbodytemp = 0
 	maxbodytemp = INFINITY

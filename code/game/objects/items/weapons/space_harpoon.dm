@@ -1,15 +1,15 @@
 #define MODE_RECEIVE 0
 #define MODE_TRANSMIT 1
 
-/obj/item/onispace_harpoon
+/obj/item/bluespace_harpoon
 	name = "NT BSD \"Harpoon\""
-	desc = "The pride of Nanotrasen's onispace research efforts, this 'harpoon' serves as a tool for short and accurate teleportation of both cargo and personnel through onispace." // OCCULUS EDIT - Better description
+	desc = "The pride of Nanotrasen's bluespace research efforts, this 'harpoon' serves as a tool for short and accurate teleportation of both cargo and personnel through bluespace." // OCCULUS EDIT - Better description
 	icon_state = "harpoon-1"
 	icon = 'icons/obj/items.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	throw_speed = 4
 	throw_range = 20
-	origin_tech = list(TECH_onispace = 5)
+	origin_tech = list(TECH_bluespace = 5)
 	price_tag = 4000
 	matter = list(MATERIAL_SILVER = 10, MATERIAL_GOLD = 5, MATERIAL_PHORON = 20, MATERIAL_PLASTIC = 20)
 	spawn_blacklisted = TRUE
@@ -24,21 +24,21 @@
 	var/range = 14 //OCCULUS EDIT - allow for more z-level traversal
 	slot_flags = SLOT_BACK //OCCULUS EDIT
 
-/obj/item/onispace_harpoon/Initialize()
+/obj/item/bluespace_harpoon/Initialize()
 	. = ..()
 	if(!cell && suitable_cell)
 		cell = new suitable_cell(src)
 
-/obj/item/onispace_harpoon/get_cell()
+/obj/item/bluespace_harpoon/get_cell()
 	return cell
 
-/obj/item/onispace_harpoon/handle_atom_del(atom/A)
+/obj/item/bluespace_harpoon/handle_atom_del(atom/A)
 	..()
 	if(A == cell)
 		cell = null
 		update_icon()
 
-/obj/item/onispace_harpoon/afterattack(atom/A, mob/user)
+/obj/item/bluespace_harpoon/afterattack(atom/A, mob/user)
 	if(get_dist(A, user) > range)
 		return ..()
 //	if(!(A in view(user))) // OCCULUS EDIT - This prevents z-level traversal somehow, so eh.
@@ -96,20 +96,20 @@
 		to_chat(user, SPAN_WARNING("Error, unable to lock-on to more than a single location at a time!")) //OCCULUS EDIT - Was too vague, now its descriptive.
 
 
-/obj/item/onispace_harpoon/proc/teleport(turf/source, turf/target, mob/living/user as mob) //OCCULUS EDIT - parse the user's info into here
+/obj/item/bluespace_harpoon/proc/teleport(turf/source, turf/target, mob/living/user as mob) //OCCULUS EDIT - parse the user's info into here
 	for(var/atom/movable/AM in source)
 		if(istype(AM, /mob/shadow))
 			continue
 		if(!AM.anchored)
 			if(prob(offset_chance * user.stats.getMult(STAT_COG, STAT_LEVEL_GODLIKE))) // OCCULUS  EDIT - Make it less likely to offset you with better stats
-				go_to_onispace(source, entropy_value, TRUE, AM, get_turf(pick(orange(teleport_offset,source))))
+				go_to_bluespace(source, entropy_value, TRUE, AM, get_turf(pick(orange(teleport_offset,source))))
 			else
-				go_to_onispace(source, entropy_value, TRUE, AM, target)
+				go_to_bluespace(source, entropy_value, TRUE, AM, target)
 
-/obj/item/onispace_harpoon/attack_self(mob/living/user as mob)
+/obj/item/bluespace_harpoon/attack_self(mob/living/user as mob)
 	return change_fire_mode(user)
 
-/obj/item/onispace_harpoon/verb/change_fire_mode(mob/user)
+/obj/item/bluespace_harpoon/verb/change_fire_mode(mob/user)
 	set name = "Change fire mode"
 	set category = "Object"
 	set src in oview(1)
@@ -123,32 +123,32 @@
 	spawn(6)	//Average length of transforming animation //OCCULUS EDIT - Updated to new sprite's values
 		transforming = FALSE
 
-/obj/item/onispace_harpoon/on_update_icon()
+/obj/item/bluespace_harpoon/on_update_icon()
 	icon_state = "harpoon-[mode]"
 
-/obj/item/onispace_harpoon/examine(var/mob/user, var/dist = -1)
+/obj/item/bluespace_harpoon/examine(var/mob/user, var/dist = -1)
 	..(user, dist)
 	to_chat(user, SPAN_NOTICE("Mode set to [mode ? "transmiting" : "receiving"]."))
 
-/obj/item/onispace_harpoon/MouseDrop(over_object)
+/obj/item/bluespace_harpoon/MouseDrop(over_object)
 	if((src.loc == usr) && istype(over_object, /obj/screen/inventory/hand) && eject_item(cell, usr))
 		cell = null
 
-/obj/item/onispace_harpoon/attackby(obj/item/C, mob/living/user)
+/obj/item/bluespace_harpoon/attackby(obj/item/C, mob/living/user)
 	if(istype(C, suitable_cell) && !cell && insert_item(C, user))
 		src.cell = C
 
-/obj/item/onispace_harpoon/mounted
+/obj/item/bluespace_harpoon/mounted
 	spawn_tags = null
 	var/charge_cost = 100
 	var/charge_tick = 0
 	var/recharge_time = 4
 
-/obj/item/onispace_harpoon/mounted/Initialize()
+/obj/item/bluespace_harpoon/mounted/Initialize()
 	. = ..()
 	START_PROCESSING(SSobj, src)
 
-/obj/item/onispace_harpoon/mounted/Process()
+/obj/item/bluespace_harpoon/mounted/Process()
 	charge_tick++
 	if(charge_tick < recharge_time)
 		return
@@ -165,17 +165,17 @@
 	cell.give(charge_cost)
 	update_icon()
 
-/obj/item/onispace_harpoon/mounted/proc/get_external_cell()
+/obj/item/bluespace_harpoon/mounted/proc/get_external_cell()
 	return loc.get_cell()
 
-/obj/item/onispace_harpoon/mounted/on_update_icon()
+/obj/item/bluespace_harpoon/mounted/on_update_icon()
 	icon_state = "harpoon-mounted-[mode]"
 
-/obj/item/onispace_harpoon/mounted/blitz
+/obj/item/bluespace_harpoon/mounted/blitz
 	name = "OR BSD \"Blauerraumharpune\""
 	desc = "Reverse engineered version of harpoon developed by old Nanotrasen, remounted for robotic use only by Oberth Republic."
 	icon_state = "harpoon-mounted-blitz-1"
 	spawn_tags = null
 
-/obj/item/onispace_harpoon/mounted/blitz/on_update_icon()
+/obj/item/bluespace_harpoon/mounted/blitz/on_update_icon()
 	icon_state = "harpoon-mounted-blitz-[mode]"

@@ -1,10 +1,10 @@
 // QUALITY COPYPASTA
 /turf/unsimulated/wall/supermatter
-	name = "onispace"
+	name = "bluespace"
 	desc = "THE END IS right now actually."
 
 	icon = 'icons/turf/space.dmi'
-	icon_state = "onispace"
+	icon_state = "bluespace"
 
 	//luminosity = 5
 	//l_color="#0066FF"

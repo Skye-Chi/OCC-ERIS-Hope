@@ -7,7 +7,7 @@
 /obj/item/weapon/tool/sword    blacklisted=0    spawn_value=3.04171   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/nt    blacklisted=0    spawn_value=5.85508   spawn_price=120   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/ceremonial    blacklisted=1    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
-/obj/item/weapon/tool/knife/dagger/onispace    blacklisted=1    spawn_value=5.66438   spawn_price=451   prob_accompanying_obj=100    accompanying_objs=nothing
+/obj/item/weapon/tool/knife/dagger/bluespace    blacklisted=1    spawn_value=5.66438   spawn_price=451   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger/assassin    blacklisted=1    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/dagger    blacklisted=0    spawn_value=6.13458   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing
 /obj/item/weapon/tool/knife/boot    blacklisted=0    spawn_value=4.69461   spawn_price=20   prob_accompanying_obj=100    accompanying_objs=nothing

@@ -189,16 +189,16 @@
 
 /obj/item/storage/belt/holding
 	name = "belt of holding"
-	desc = "The greatest in pants-supporting onispace technology."
+	desc = "The greatest in pants-supporting bluespace technology."
 	icon_state = "holdingbelt"
 	item_state = "holdingbelt"
 	storage_slots = 14
 	max_w_class = ITEM_SIZE_BULKY
 	max_storage_space = DEFAULT_HUGE_STORAGE * 1.25
 	matter = list(MATERIAL_STEEL = 6, MATERIAL_GOLD = 6, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 3)
-	origin_tech = list(TECH_onispace = 4)
+	origin_tech = list(TECH_bluespace = 4)
 	spawn_blacklisted = TRUE
 
 /obj/item/storage/belt/holding/New()
 	..()
-	onispace_entropy(4, get_turf(src))
+	bluespace_entropy(4, get_turf(src))

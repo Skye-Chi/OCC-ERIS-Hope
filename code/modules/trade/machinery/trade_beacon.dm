@@ -17,7 +17,7 @@
 /obj/machinery/trade_beacon/proc/activate()
 	FLICK("[icon_state]_active", src)
 	do_sparks(5, 0, loc)
-	onispace_entropy(2, get_turf(src))
+	bluespace_entropy(2, get_turf(src))
 	playsound(loc, "sparks", 50, 1)
 
 /obj/machinery/trade_beacon/sending

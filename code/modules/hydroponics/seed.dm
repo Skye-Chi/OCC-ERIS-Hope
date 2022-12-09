@@ -68,7 +68,7 @@
 	set_trait(TRAIT_WALL_HUGGER,          0)            // If 1, plant grows on walls as well as floors. Only useful if Spread is set
 	set_trait(TRAIT_MATURATION,           0)            // Time taken before the plant is mature.
 	set_trait(TRAIT_PRODUCTION,           0)            // Time before harvesting can be undertaken again.
-	set_trait(TRAIT_TELEPORTING,          0)            // Uses the onispace tomato effect.
+	set_trait(TRAIT_TELEPORTING,          0)            // Uses the bluespace tomato effect.
 	set_trait(TRAIT_BIOLUM,               0)            // Plant is bioluminescent.
 	set_trait(TRAIT_ALTER_TEMP,           0)            // If set, the plant will periodically alter local temp by this amount.
 	set_trait(TRAIT_PRODUCT_ICON,         0)            // Icon to use for fruit coming from this plant.
@@ -353,7 +353,7 @@
 	do_sting(target,thrown)
 	do_thorns(target,thrown)
 
-	// onispace tomato code copied over from grown.dm.
+	// bluespace tomato code copied over from grown.dm.
 	if(get_trait(TRAIT_TELEPORTING))
 
 		//Plant potency determines radius of teleport.
@@ -364,7 +364,7 @@
 		var/turf/picked = get_random_turf_in_range(TLoc, outer_teleport_radius, inner_teleport_radius)
 
 		if(picked)
-			go_to_onispace(TLoc, 2, TRUE, target, picked)
+			go_to_bluespace(TLoc, 2, TRUE, target, picked)
 			impact = 1
 
 	return impact

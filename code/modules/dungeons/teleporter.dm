@@ -1,8 +1,8 @@
 /obj/rogue/teleporter //the teleporter itself
 	name = "ancient teleporter"
-	icon = 'icons/obj/onispace_portal.dmi'
+	icon = 'icons/obj/bluespace_portal.dmi'
 	desc = "A rugged and battered piece of technology from before, seems barely operational."
-	icon_state = "onispace_portal"
+	icon_state = "bluespace_portal"
 	w_class = ITEM_SIZE_GARGANTUAN
 	pixel_x = -16
 	var/charging = FALSE
@@ -116,7 +116,7 @@
 		victims_to_teleport += E
 
 	for(var/mob/living/M in victims_to_teleport)
-		go_to_onispace(get_turf(src), 3, FALSE, M, get_turf(target))
+		go_to_bluespace(get_turf(src), 3, FALSE, M, get_turf(target))
 
 	new /obj/structure/scrap_spawner/science/large(src.loc)
 
@@ -202,7 +202,7 @@
 /obj/rogue/telebeacon
 	name = "ancient beacon"
 	desc = "A metallic pylon, covered in rust. It seems still operational."
-	icon = 'icons/obj/onispace_beacon.dmi'
+	icon = 'icons/obj/bluespace_beacon.dmi'
 	icon_state = "beacon_off"
 	var/victims_to_teleport = list()
 	var/turf/target = null
@@ -239,7 +239,7 @@
 		for(var/obj/structure/closet/C in range(8, src))//Clostes as well, for transport and storage
 			victims_to_teleport += C
 		for(var/atom/movable/M in victims_to_teleport)
-			go_to_onispace(get_turf(src), 3, FALSE, M, get_turf(target))
+			go_to_bluespace(get_turf(src), 3, FALSE, M, get_turf(target))
 			sleep(1)
 			var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
 			sparks.set_up(3, 0, get_turf(loc))
@@ -263,7 +263,7 @@
 			to_chat(user, "The beacon has no destination, Ahelp this.")
 	else if(active)
 		to_chat(user, "You reach out and touch the beacon. A strange feeling envelops you.")
-		go_to_onispace(get_turf(src), 3, FALSE, user, get_turf(target))
+		go_to_bluespace(get_turf(src), 3, FALSE, user, get_turf(target))
 		sleep(1)
 		var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
 		sparks.set_up(3, 0, get_turf(user))

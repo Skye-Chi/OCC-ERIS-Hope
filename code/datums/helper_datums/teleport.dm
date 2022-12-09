@@ -171,20 +171,20 @@
 		ofholding += satchelholding.len
 
 	if(ofholding)
-		GLOB.onispace_entropy += ofholding
+		GLOB.bluespace_entropy += ofholding
 		precision = max(rand(1, 100)*ofholding, 100)
 		if(isliving(teleatom))
 			var/mob/living/MM = teleatom
 			if(bagholding.len)
-				to_chat(MM, SPAN_DANGER("The onispace interface of your bag of holding interferes with the teleport!"))
+				to_chat(MM, SPAN_DANGER("The bluespace interface of your bag of holding interferes with the teleport!"))
 			if(pouchholding.len)
-				to_chat(MM, SPAN_DANGER("The onispace interface of your pouch of holding interferes with the teleport!"))
+				to_chat(MM, SPAN_DANGER("The bluespace interface of your pouch of holding interferes with the teleport!"))
 			if(beltholding.len)
-				to_chat(MM, SPAN_DANGER("The onispace interface of your belt of holding interferes with the teleport!"))
+				to_chat(MM, SPAN_DANGER("The bluespace interface of your belt of holding interferes with the teleport!"))
 			if(trashholding.len)
-				to_chat(MM, SPAN_DANGER("The onispace interface of your trashbag of holding interferes with the teleport!"))
+				to_chat(MM, SPAN_DANGER("The bluespace interface of your trashbag of holding interferes with the teleport!"))
 			if(satchelholding.len)
-				to_chat(MM, SPAN_DANGER("The onispace interface of your satchel of holding interferes with the teleport!"))
+				to_chat(MM, SPAN_DANGER("The bluespace interface of your satchel of holding interferes with the teleport!"))
 	return 1
 /datum/teleport/instant/science/teleportChecks()
 	if(istype(teleatom, /obj/effect/sparks))

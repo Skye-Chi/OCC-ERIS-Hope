@@ -78,9 +78,9 @@
 	name = "Circuit board (Teleporter station board)"
 	build_path = /obj/machinery/teleport/station
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 2, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 2, TECH_bluespace = 2)
 	req_components = list(
-		/obj/item/onispace_crystal/artificial = 3,
+		/obj/item/bluespace_crystal/artificial = 3,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stock_parts/subspace/filter = 1
 	)
@@ -89,9 +89,9 @@
 	name = "Circuit board (Teleporter hub board)"
 	build_path = /obj/machinery/teleport/hub
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 2, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 2, TECH_bluespace = 2)
 	req_components = list(
-		/obj/item/onispace_crystal/artificial = 2,
+		/obj/item/bluespace_crystal/artificial = 2,
 		/obj/item/stock_parts/capacitor = 1
 	)
 

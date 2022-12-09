@@ -18,7 +18,7 @@
 //3 = Electromagnetic energy
 //4 = Particle field
 //5 = Organically reactive exotic particles
-//6 = Interdimensional/onispace? phasing
+//6 = Interdimensional/bluespace? phasing
 //7 = Atomic synthesis
 
 /datum/artifact_effect/New(var/atom/location)

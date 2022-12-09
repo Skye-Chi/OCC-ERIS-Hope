@@ -8,7 +8,7 @@
 	icon = "binarykey"
 
 	required_technologies = list()
-	required_tech_levels = list(RESEARCH_onispace = 5)
+	required_tech_levels = list(RESEARCH_bluespace = 5)
 	cost = 2000
 
 	unlocks_designs = list(/datum/design/research/item/binaryencrypt)

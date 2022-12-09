@@ -6,7 +6,7 @@
 	var/activation_emote = "sigh"
 	var/obj/item/scanned
 	is_legal = FALSE
-	origin_tech = list(TECH_MATERIAL=2, TECH_MAGNET=4, TECH_onispace=5, TECH_COVERT=4)
+	origin_tech = list(TECH_MATERIAL=2, TECH_MAGNET=4, TECH_bluespace=5, TECH_COVERT=4)
 	spawn_tags = null
 
 /obj/item/implant/compressed/trigger(emote, mob/living/source)

@@ -204,7 +204,7 @@
 					M.death()  // First we kill them
 					qdel(M)
 				else  // Humans just win an express ticket to deep space
-					go_to_onispace(M.loc, 0, FALSE, M, locate(rand(5, world.maxx - 5), rand(5, world.maxy -5), 3), 0)
+					go_to_bluespace(M.loc, 0, FALSE, M, locate(rand(5, world.maxx - 5), rand(5, world.maxy -5), 3), 0)
 			if(!T.is_space())
 				T.ChangeTurf(/turf/space)
 
@@ -535,7 +535,7 @@
 				M.death()  // First we kill them
 				qdel(M)
 			else  // Humans just win an express ticket to deep space
-				go_to_onispace(M.loc, 0, FALSE, M, locate(rand(5, world.maxx - 5), rand(5, world.maxy -5), 3), 0)
+				go_to_bluespace(M.loc, 0, FALSE, M, locate(rand(5, world.maxx - 5), rand(5, world.maxy -5), 3), 0)
 		if(T.x <= JTB_OFFSET || T.y <= JTB_OFFSET || T.x >= maxx+JTB_OFFSET+1 || T.y >= maxy+JTB_OFFSET+1)  // To let a 1-wide ribbon of clean space
 			T.ChangeTurf(/turf/simulated/jtb_edge)
 
@@ -906,7 +906,7 @@
 //////////////////////////////
 /obj/structure/jtb_pillar
 	name = "space-time interference dampener"
-	desc = "An ominous pillar that can stabilize a onispace portal by dampening local space-time interferences."
+	desc = "An ominous pillar that can stabilize a bluespace portal by dampening local space-time interferences."
 	icon = 'icons/obj/structures/junk_tractor_beam.dmi'
 	icon_state = "pillar"
 	layer = ABOVE_MOB_LAYER

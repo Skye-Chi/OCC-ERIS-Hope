@@ -128,13 +128,13 @@
 		return 0
 
 	phase_out(H,get_turf(H))
-	go_to_onispace(get_turf(H), 3, TRUE, H, T)
+	go_to_bluespace(get_turf(H), 3, TRUE, H, T)
 	phase_in(H,get_turf(H))
 
 	for(var/obj/item/grab/G in H.contents)
 		if(G.affecting)
 			phase_out(G.affecting,get_turf(G.affecting))
-			go_to_onispace(get_turf(H), 3, TRUE, G.affecting, locate(T.x+rand(-1,1),T.y+rand(-1,1),T.z))
+			go_to_bluespace(get_turf(H), 3, TRUE, G.affecting, locate(T.x+rand(-1,1),T.y+rand(-1,1),T.z))
 			phase_in(G.affecting,get_turf(G.affecting))
 
 	return 1

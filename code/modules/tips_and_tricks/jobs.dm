@@ -186,4 +186,4 @@
 
 /tipsAndTricks/jobs/phazon
     jobs_list = list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist)
-    tipText = "The Phazon is a rare combat mech. It has the highest base movespeed of any mech, good armor, and can phase through anything thanks to onispace technology. Use responsibly."
+    tipText = "The Phazon is a rare combat mech. It has the highest base movespeed of any mech, good armor, and can phase through anything thanks to bluespace technology. Use responsibly."

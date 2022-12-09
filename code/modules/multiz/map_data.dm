@@ -125,8 +125,8 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 	var/emergency_shuttle_called_message = "The emergency evacuation procedures are now in effect. Safety pods will be armed in %ETA%"
 	var/emergency_shuttle_recall_message = "Emergency evacuation sequence aborted. Return to normal operating conditions."
 
-	var/shuttle_docked_message = "Jump preparation complete. The onispace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
-	var/shuttle_leaving_dock = "Jump initiated, exiting onispace in %ETA%."
+	var/shuttle_docked_message = "Jump preparation complete. The bluespace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
+	var/shuttle_leaving_dock = "Jump initiated, exiting bluespace in %ETA%."
 	var/shuttle_called_message = "Jump sequence initiated. Transit procedures are now in effect. Jump in %ETA%."
 	var/shuttle_recall_message = "Jump sequence aborted, return to normal operating conditions."
 

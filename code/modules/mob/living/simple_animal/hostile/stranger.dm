@@ -32,7 +32,7 @@
 	rapid = TRUE
 	projectiletype = /obj/item/projectile/plasma/heavy
 	projectilesound = 'sound/weapons/laser.ogg'
-	faction = "onispace"
+	faction = "bluespace"
 	var/empy_cell = FALSE
 	var/prob_tele = 20
 

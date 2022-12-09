@@ -78,8 +78,8 @@
  */
 /obj/item/storage/backpack/holding
 	name = "bag of holding"
-	desc = "A backpack that opens into a localized pocket of onispace."
-	origin_tech = list(TECH_onispace = 4)
+	desc = "A backpack that opens into a localized pocket of bluespace."
+	origin_tech = list(TECH_bluespace = 4)
 	icon_state = "holdingpack"
 	max_w_class = ITEM_SIZE_BULKY
 	max_storage_space = DEFAULT_HUGE_STORAGE * 2
@@ -87,11 +87,11 @@
 
 /obj/item/storage/backpack/holding/New()
 	..()
-	onispace_entropy(6, get_turf(src))
+	bluespace_entropy(6, get_turf(src))
 
 /obj/item/storage/backpack/holding/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/storage/backpack/holding))
-		to_chat(user, SPAN_WARNING("The onispace interfaces of the two devices conflict and malfunction."))
+		to_chat(user, SPAN_WARNING("The bluespace interfaces of the two devices conflict and malfunction."))
 		qdel(W)
 		return
 	..()

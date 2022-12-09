@@ -1,5 +1,5 @@
 /obj/item/electronics/circuitboard/trade_beacon
-	origin_tech = list(TECH_onispace = 2)
+	origin_tech = list(TECH_bluespace = 2)
 	board_type = "machine"
 	req_components = list(
 		/obj/item/stock_parts/subspace/crystal = 1,

@@ -5,7 +5,7 @@
 /obj/item/electronics/circuitboard/holodeckcontrol
 	name = T_BOARD("holodeck control console")
 	build_path = /obj/machinery/computer/HolodeckControl
-	origin_tech = list(TECH_DATA = 2, TECH_onispace = 2)
+	origin_tech = list(TECH_DATA = 2, TECH_bluespace = 2)
 	var/last_to_emag
 	var/linkedholodeck_area
 	var/list/supported_programs

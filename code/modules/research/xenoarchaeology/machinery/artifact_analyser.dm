@@ -181,7 +181,7 @@
 					if(5)
 						out += "organically reactive exotic particles"
 					if(6)
-						out += "interdimensional/onispace? phasing"
+						out += "interdimensional/bluespace? phasing"
 					if(7)
 						out += "atomic synthesis"
 					else
@@ -225,7 +225,7 @@
 					if(5)
 						out += "organically reactive exotic particles"
 					if(6)
-						out += "interdimensional/onispace? phasing"
+						out += "interdimensional/bluespace? phasing"
 					if(7)
 						out += "atomic synthesis"
 					else

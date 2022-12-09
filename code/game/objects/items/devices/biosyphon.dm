@@ -1,6 +1,6 @@
 /obj/item/biosyphon
 	name = "Lazarus Carbon Reclaimer"
-	desc = "A vat of onispace-enriched yeast that slowly produces donuts seemingly out of nowhere. LCR was generously donated to Aegis after one of the officers was hospitalized as a result of inhaling Lazarus' macroinsect repellant."
+	desc = "A vat of bluespace-enriched yeast that slowly produces donuts seemingly out of nowhere. LCR was generously donated to Aegis after one of the officers was hospitalized as a result of inhaling Lazarus' macroinsect repellant."
 	icon = 'icons/obj/faction_item.dmi'
 	icon_state = "biosyphon"
 	item_state = "biosyphon"
@@ -10,7 +10,7 @@
 	throw_speed = 1
 	throw_range = 2
 	price_tag = 20000
-	origin_tech = list(TECH_MATERIAL = 4, TECH_onispace = 8, TECH_POWER = 7)
+	origin_tech = list(TECH_MATERIAL = 4, TECH_bluespace = 8, TECH_POWER = 7)
 	matter = list(MATERIAL_PLASTIC = 6, MATERIAL_GLASS = 7)
 	spawn_frequency = 0
 	spawn_blacklisted = TRUE

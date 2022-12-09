@@ -437,20 +437,20 @@
 							/datum/design/research/item/part/rocket)
 
 /*
-/datum/technology/onispace_parts
-	name = "onispace Parts"
-	desc = "onispace Parts"
+/datum/technology/bluespace_parts
+	name = "bluespace Parts"
+	desc = "bluespace Parts"
 	tech_type = RESEARCH_ENGINEERING
 
 	x = 0.9
 	y = 0.5
-	icon = "onispacematterbin"
+	icon = "bluespacematterbin"
 
 	required_technologies = list(/datum/technology/ultra_parts)
 	required_tech_levels = list()
 	cost = 2500
 
-	unlocks_designs = list("quadultra_micro_laser", "onispace_matter_bin")
+	unlocks_designs = list("quadultra_micro_laser", "bluespace_matter_bin")
 */
 
 
