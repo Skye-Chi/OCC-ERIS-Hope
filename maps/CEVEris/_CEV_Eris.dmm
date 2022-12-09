@@ -3491,8 +3491,6 @@
 	})
 "aMl" = (
 /obj/machinery/mineral/processing_unit{
-	input_turf = 2;
-	output_turf = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -10107,8 +10105,6 @@
 	})
 "dCH" = (
 /obj/machinery/mineral/unloading_machine{
-	input_turf = 2;
-	output_turf = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14769,7 +14765,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	cycle_to_external_air = 1;
 	frequency = 2222;
 	id_tag = "playablecolonymain";
 	pixel_y = 28;
@@ -16629,8 +16624,6 @@
 	})
 "pgz" = (
 /obj/machinery/mineral/stacking_machine{
-	input_turf = 8;
-	output_turf = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/steel/techfloor,
